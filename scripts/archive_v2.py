@@ -169,6 +169,7 @@ def esc(value):
 def render(data):
     tz = data['timezone']
     messages = data['messages']
+    src_labels = {'chatgpt': 'ChatGPT', 'codex': 'Codex', 'zcode': 'ZCode'}
     tabs = '<button role="tab" id="tab-all" aria-controls="archive-panel" aria-selected="true" data-category="all">全部</button>'
     sections = []
     for n, cat in enumerate(data['categories']):
@@ -198,20 +199,23 @@ def render(data):
                     # Expanding a requirement reveals every original at once; originals are never collapsed or numbered.
                     bodies.append(f'<div class="original"><span class="original-meta">{esc(meta)}</span><pre>{esc(records[0]["text"])}</pre>{attachments}</div>')
                 srcs = sorted({messages[ref]['source'] for ref in refs})
+                chips = ''.join(f'<span class="badge src {esc(src)}">{esc(src_labels.get(src, src))}</span>' for src in srcs)
                 search = '\n'.join([cat['name'], p['name'], p['description'], *p.get('aliases', []), r['summary'], *(messages[ref]['text'] for ref in refs)]).lower()
                 mark = '<span class="badge scheduled">定时</span>' if r.get('scheduled') else ''
                 note = ('<p class="requirement-notes">'+esc(r['note'])+'</p>') if r.get('note') else ''
-                rows.append(f'<details class="task" data-search="{esc(search)}" data-sources="{esc(json.dumps(srcs))}"><summary class="task-row"><time>{esc(time_label(r["last_at"], tz))}</time><span class="task-title">{esc(r["summary"])}</span><span class="markers">{mark}<span class="sub-count">{len(originals)} 原文</span><span class="chevron">⌄</span></span></summary><div class="task-body">{note}{"".join(bodies)}</div></details>')
+                rows.append(f'<details class="task" data-search="{esc(search)}" data-sources="{esc(json.dumps(srcs))}"><summary class="task-row"><time>{esc(time_label(r["last_at"], tz))}</time><span class="task-title">{esc(r["summary"])}</span><span class="markers">{chips}{mark}<span class="sub-count">{len(originals)} 原文</span><span class="chevron">⌄</span></span></summary><div class="task-body">{note}{"".join(bodies)}</div></details>')
             times = '最早记录 '+time_label(p['first_at'], tz)+' · 最近进展 '+time_label(p['last_at'], tz)
             groups.append(f'<details class="group"><summary class="group-heading"><h3>{esc(p["name"])}<span class="project-chevron" aria-hidden="true">⌄</span><span class="group-count">{len(reqs)} 条需求</span></h3><p>{esc(p["description"])}</p><div class="project-times">{esc(times)}</div></summary><div class="project-body">{"".join(rows)}</div></details>')
         sections.append(f'<section class="category" data-category="{esc(cat["id"])}"><header class="category-heading"><h2>{esc(cat["name"])}</h2><span>{count} 条需求</span></header><div class="category-content">{"".join(groups)}</div></section>')
     stats = data['stats']
     labels = {'chatgpt': 'ChatGPT', 'codex': 'Codex', 'zcode': 'ZCode'}
+    req_srcs = [sorted({messages[ref]['source'] for ref in r['message_refs']}) for r in data['requirements']]
+    src_summary = ' / '.join(f'{labels.get(src, src)} {sum(src in rs for rs in req_srcs)}' for src in sorted({s for rs in req_srcs for s in rs}))
     source_counts = collections.Counter(m['source'] for m in messages.values())
     sources = '<button type="button" data-source="all" aria-pressed="true">全部</button>' + ''.join(
         f'<button type="button" data-source="{esc(src)}" aria-pressed="false">{esc(labels.get(src, src))} <span class="source-count">{source_counts[src]}</span></button>' for src in sorted(source_counts))
     coverage = '；'.join(c['source']+'：'+str(c.get('scope', '覆盖范围未说明')) for c in data['coverage']) or '尚未接入消息来源'
-    values = {'TITLE': esc(data['title']), 'STATS': f'{stats["projects"]} 个项目 · {stats["requirements"]} 条需求 · {stats["messages"]} 条关联消息',
+    values = {'TITLE': esc(data['title']), 'STATS': f'{stats["projects"]} 个项目 · {stats["requirements"]} 条需求 · {stats["messages"]} 条关联消息 · 来自 {src_summary}',
               'UPDATED': esc(time_label(data['generated_at'], tz)), 'TABS': tabs, 'SECTIONS': ''.join(sections), 'SOURCES': sources,
               'COVERAGE': esc(coverage+f' · 待整理 {stats["pending"]} 条'),
               'DATA': json.dumps(data, ensure_ascii=False).replace('<', r'\u003c').replace('>', r'\u003e').replace('&', r'\u0026')}
