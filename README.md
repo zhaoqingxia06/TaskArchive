@@ -24,4 +24,4 @@
 
 ## 个人示例
 
-[查看作者的任务档案网站](https://zhaoqingxia06.github.io/AllTaskforAI/)
+[查看作者的任务档案网站](https://zhaoqingxia06.github.io/TaskArchive/)
