@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "zcode",
-  "generated_at": "2026-10-16T13:19:25+08:00",
+  "generated_at": "2026-10-18T12:29:39+08:00",
   "tasks": [
     {
       "id": "sess_5882251f-3fae-47f4-835d-ee1ccd7f7d27",
@@ -780,7 +780,7 @@
       "category": "记录整理",
       "group": "记录整理",
       "created_at": "2026-09-23T20:04:57+08:00",
-      "updated_at": "2026-10-16T01:31:40+08:00",
+      "updated_at": "2026-10-16T13:21:07+08:00",
       "status": "completed",
       "scheduled": true,
       "archived": false,
@@ -851,6 +851,10 @@
         },
         {
           "time": "2026-10-16T12:00:48+08:00",
+          "text": "每日任务：刷新本地「任务档案」页面 /Users/nacayu/.zcode/workspace/default/任务发布记录.html，并把最新任务同步到公共跨平台档案仓库 zhaoqingxia06/AllTaskforAI（线上：https://zhaoqingxia06.github.io/AllTaskforAI/）。\n\n步骤：\n1. cd /Users/nacayu/.zcode/workspace/default/.task-archive && python3 extract_tasks.py && python3 build_html.py（重新提取全部任务并重建本地 HTML，末行打印 tasks: N subs: M range: 日期范围）\n2. 新任务分类：看 extract_tasks.py 输出的任务 id 前 13 位（形如 sess_4929bf13-e）。凡未出现在 build_html.py 的 CAT_MAP（分类）与 export_repo.py 的 CAT（分类）+ GROUP_MAP（仓库分组）里的新任务，读其标题补齐映射后重跑 build_html.py。本地分类键：product/auto/research/life/tools/support/meta；仓库分组名尽量复用 /tmp/AllTaskforAI/data/curation.json 已有组名，便于与 Codex 等平台的同名组合并（分类已存在就合并进去，不要新造重复分组）。\n3. 同步公共仓库：cd /tmp && rm -rf AllTaskforAI && git clone https://github.com/zhaoqingxia06/AllTaskforAI.git && python3 /Users/nacayu/.zcode/workspace/default/.task-archive/export_repo.py /tmp/AllTaskforAI（脚本已内置脱敏：消息中的 figd_/sk-/ghp_/github_pat_/AKIA/xox 等令牌替换为[凭据已隐藏]）。在仓库内 git status：无变化则跳过第4步；有变化则 git add data/contributions/zcode.json data/curation.json && git commit -m \"Refresh ZCode contribution YYYY-MM-DD\" && git pull --rebase origin main && git push origin main（绝不允许提交未脱敏的凭据；若推送仍被 Push Protection 拦截，找出残留密钥补充进 export_repo.py 的 SECRET_PATTERNS 后重来）。\n4. 推送后 gh run list --repo zhaoqingxia06/AllTaskforAI --limit 1 确认 CI 成功；失败时 gh run view --log-failed 排查。若报 Pages 配置错误，检查 Pages 是否启用：gh api repos/zhaoqingxia06/AllTaskforAI/pages，未启用则 gh api -X POST ... -f build_type=workflow 并 gh workflow enable pages.yml 后 gh workflow run pages.yml。\n5. 自检并汇报：本地 HTML 内 <article class=\"row\"> 数量应等于 tasks 数；回复本次任务/子任务总数与时间范围、相比上次基准（2026-10-15：36 任务 209 子任务）新增/变化的任务；若推送了仓库，附线上地址与 CI 结果。"
+        },
+        {
+          "time": "2026-10-18T12:28:42+08:00",
           "text": "每日任务：刷新本地「任务档案」页面 /Users/nacayu/.zcode/workspace/default/任务发布记录.html，并把最新任务同步到公共跨平台档案仓库 zhaoqingxia06/AllTaskforAI（线上：https://zhaoqingxia06.github.io/AllTaskforAI/）。\n\n步骤：\n1. cd /Users/nacayu/.zcode/workspace/default/.task-archive && python3 extract_tasks.py && python3 build_html.py（重新提取全部任务并重建本地 HTML，末行打印 tasks: N subs: M range: 日期范围）\n2. 新任务分类：看 extract_tasks.py 输出的任务 id 前 13 位（形如 sess_4929bf13-e）。凡未出现在 build_html.py 的 CAT_MAP（分类）与 export_repo.py 的 CAT（分类）+ GROUP_MAP（仓库分组）里的新任务，读其标题补齐映射后重跑 build_html.py。本地分类键：product/auto/research/life/tools/support/meta；仓库分组名尽量复用 /tmp/AllTaskforAI/data/curation.json 已有组名，便于与 Codex 等平台的同名组合并（分类已存在就合并进去，不要新造重复分组）。\n3. 同步公共仓库：cd /tmp && rm -rf AllTaskforAI && git clone https://github.com/zhaoqingxia06/AllTaskforAI.git && python3 /Users/nacayu/.zcode/workspace/default/.task-archive/export_repo.py /tmp/AllTaskforAI（脚本已内置脱敏：消息中的 figd_/sk-/ghp_/github_pat_/AKIA/xox 等令牌替换为[凭据已隐藏]）。在仓库内 git status：无变化则跳过第4步；有变化则 git add data/contributions/zcode.json data/curation.json && git commit -m \"Refresh ZCode contribution YYYY-MM-DD\" && git pull --rebase origin main && git push origin main（绝不允许提交未脱敏的凭据；若推送仍被 Push Protection 拦截，找出残留密钥补充进 export_repo.py 的 SECRET_PATTERNS 后重来）。\n4. 推送后 gh run list --repo zhaoqingxia06/AllTaskforAI --limit 1 确认 CI 成功；失败时 gh run view --log-failed 排查。若报 Pages 配置错误，检查 Pages 是否启用：gh api repos/zhaoqingxia06/AllTaskforAI/pages，未启用则 gh api -X POST ... -f build_type=workflow 并 gh workflow enable pages.yml 后 gh workflow run pages.yml。\n5. 自检并汇报：本地 HTML 内 <article class=\"row\"> 数量应等于 tasks 数；回复本次任务/子任务总数与时间范围、相比上次基准（2026-10-15：36 任务 209 子任务）新增/变化的任务；若推送了仓库，附线上地址与 CI 结果。"
         }
       ]
