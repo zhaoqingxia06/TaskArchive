@@ -6762,12 +6762,15 @@
     {
       "id": "sign-app-stats-analysis",
       "project_id": "p-sign-translator-v2",
-      "summary": "在 vivo 开发者平台查看手语翻译官 App 下载量与运营数据的变化，并结合 9-28 上线的手语翻译官 2.0 分析哪些增长与该版本更新相关",
+      "summary": "在 vivo 开发者平台查看手语翻译官 App 下载量与运营数据变化，并结合 9-28 上线的手语翻译官 2.0 分析哪些增长与该版本相关：跟踪周末数据变化、输出 9.19–10.19 新增用户曲线，并用 1~3 句话总结 2.0 上线后的表现",
       "message_refs": [
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvatcfhk_4f266ab9-badb-4750-b6cf-43fd4dc1ada3\"]",
-        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvatfqex_87da67d4-bdd5-4989-b298-cd3e4b50a705\"]"
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvatfqex_87da67d4-bdd5-4989-b298-cd3e4b50a705\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvekpy96_a368bf6e-92b9-4616-bad0-7fe5406cde2d\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvekvgw5_8335bb61-f87d-40a0-ba90-8909aedc9c04\"]",
+        "[\"zcode\",\"sess_8d82ddce-c45a-4dde-939f-2edf7f7a02dd\",\"msg_mven7u1i_5aa8199f-4e47-47f1-82cd-f638813026a9\"]"
       ],
-      "evidence_sha256": "f7724052d9488807b7c89be610f3cbcdbf707636bdef752afa7fd4fa42660a3c",
+      "evidence_sha256": "aaf010544509d8a47f3fd1b6d4072363cd23bae30787098eb6a9920119576345",
       "note": "开发者平台账号密码已在公开原文中脱敏。"
     },
     {
@@ -6798,6 +6801,30 @@
         "[\"zcode\",\"sess_badf9352-073a-412f-b0e2-a99f6305e837\",\"msg_mvav4shi_735695ae-169f-430d-afb7-65fbebd1cae0\"]"
       ],
       "evidence_sha256": "23690623921c57f400abd38f940e4499b4444d841bee648721b7f04d7209404b"
+    },
+    {
+      "id": "fitness-course-basics",
+      "project_id": "p-fitness-plan",
+      "summary": "了解常规健身课程与普拉提课程的内容构成，并判断当前阶段自己最适合做什么锻炼",
+      "message_refs": [
+        "[\"zcode\",\"sess_368242b9-c68f-4d76-bff1-6b5fc13008dc\",\"msg_mvekgxj4_8d859ef8-3d77-4028-af7c-a41d8efb10bc\"]",
+        "[\"zcode\",\"sess_368242b9-c68f-4d76-bff1-6b5fc13008dc\",\"msg_mveklza2_c3d8ecfe-e78e-42fc-8b96-c9fea357b506\"]",
+        "[\"zcode\",\"sess_368242b9-c68f-4d76-bff1-6b5fc13008dc\",\"msg_mvekodzt_42b26401-24d2-408a-ae92-f3954c345781\"]"
+      ],
+      "evidence_sha256": "3800fe53304d5462d7332b3d43f92dcc269924a07a4fb40ac084431457e00b8f"
+    },
+    {
+      "id": "sign-bi-daily-monitor",
+      "project_id": "p-sign-translator-v2",
+      "summary": "接入手语翻译官 BI 看板（bi.vmic.xyz/dashboard/38157）并验证可查阅：分析 9-28 上线 2.0 后整体数据是正常波动还是缓慢增长，以及手语视频生成、AI 手语陪练功能的使用情况；从看板筛选关键用户数据项（手语/键盘发送、二次编辑、人均消息量等）建立每天 10:00 的数据监控，关键数据项先输出给用户确认",
+      "message_refs": [
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveksb19_440a4740-cdcf-4594-9be3-ebf3e0006f30\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvekyo4w_445e4744-c467-40a5-9b3b-88bde8b104b8\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvemyaym_d01b0899-2777-41d7-ae6e-c285eafd0c68\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveoglzv_2f34a0d3-37e8-4aa7-ab76-0233878cf7e4\"]"
+      ],
+      "evidence_sha256": "2fddf906920e49612ce364863177e9f2df2c7cad58295947cdd627f0002d18de",
+      "scheduled": true
     }
   ],
   "excluded_task_ids": [
