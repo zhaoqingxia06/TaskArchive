@@ -6753,11 +6753,12 @@
     {
       "id": "free-ai-fitness-tool-scan",
       "project_id": "p-fitness-plan",
-      "summary": "寻找免费不收费、能根据个人健身需求直接生成健身计划的 AI 工具",
+      "summary": "寻找免费不收费、能根据个人健身需求直接生成健身计划的 AI 工具，并推荐可跟着计划看动作的免费健身 App",
       "message_refs": [
-        "[\"zcode\",\"sess_4ee37bf2-4ee9-4e63-833b-8f3984a09aed\",\"msg_mvauiq04_75c06e4f-ad60-496c-a5b0-6a9781127fc1\"]"
+        "[\"zcode\",\"sess_4ee37bf2-4ee9-4e63-833b-8f3984a09aed\",\"msg_mvauiq04_75c06e4f-ad60-496c-a5b0-6a9781127fc1\"]",
+        "[\"zcode\",\"sess_368242b9-c68f-4d76-bff1-6b5fc13008dc\",\"msg_mvggjlk0_6f36445d-93a3-4858-9262-c97560608674\"]"
       ],
-      "evidence_sha256": "665ab6aad3a19840d2b2d63901835dade502bec3503be77fda2b3f59ad3de15a"
+      "evidence_sha256": "f8281e0dca0b026129986c8690637e8cb5ded5efab55c745b24e802c4053709f"
     },
     {
       "id": "sign-app-stats-analysis",
@@ -6816,15 +6817,94 @@
     {
       "id": "sign-bi-daily-monitor",
       "project_id": "p-sign-translator-v2",
-      "summary": "接入手语翻译官 BI 看板（bi.vmic.xyz/dashboard/38157）并验证可查阅：分析 9-28 上线 2.0 后整体数据是正常波动还是缓慢增长，以及手语视频生成、AI 手语陪练功能的使用情况；从看板筛选关键用户数据项（手语/键盘发送、二次编辑、人均消息量等）建立每天 10:00 的数据监控，关键数据项先输出给用户确认",
+      "summary": "接入手语翻译官 BI 看板（bi.vmic.xyz/dashboard/38157）并验证可查阅：分析 9-28 上线 2.0 后整体数据是正常波动还是缓慢增长，以及手语视频生成、AI 手语陪练功能的使用情况；从看板筛选关键用户数据项建立每天 10:00 的数据监控，并整理手语翻译官与 vivo 听说的日活及使用频率数据",
       "message_refs": [
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveksb19_440a4740-cdcf-4594-9be3-ebf3e0006f30\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvekyo4w_445e4744-c467-40a5-9b3b-88bde8b104b8\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvemyaym_d01b0899-2777-41d7-ae6e-c285eafd0c68\"]",
-        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveoglzv_2f34a0d3-37e8-4aa7-ab76-0233878cf7e4\"]"
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveoglzv_2f34a0d3-37e8-4aa7-ab76-0233878cf7e4\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvf1qjmd_876b379f-6beb-4699-90ad-1e30e7fcf9bb\"]"
       ],
-      "evidence_sha256": "2fddf906920e49612ce364863177e9f2df2c7cad58295947cdd627f0002d18de",
+      "evidence_sha256": "3259622d641b8d20f591308ff80631c87ae119de81f8d1fee5f0449577322462",
       "scheduled": true
+    },
+    {
+      "id": "hear-call-fusion-demo",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "做一个融合 vivo 听说（语音转文字/文字转语音、区分说话人）与无障碍通话（电话/微信来电弹窗）的手机 UI 交互 demo，让系统更精简；按反馈检查并删除页面无用元素",
+      "message_refs": [
+        "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mvexjqd5_2cc7f8c1-e5fb-4e92-857a-5792832aafef\"]",
+        "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mveyim8n_797a4168-0bc7-4ca8-a557-5a36bd7536bb\"]",
+        "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mveyj4mn_fc253716-bf95-4ba2-9f88-d124fed32531\"]"
+      ],
+      "evidence_sha256": "f66482c2cbd8d056c96a95042946487e40b4c702c358cebb3431da507710bbc7"
+    },
+    {
+      "id": "install-understand-anything",
+      "project_id": "p-bc90278379c9",
+      "summary": "安装 Understand Anything 代码库理解工具",
+      "message_refs": [
+        "[\"zcode\",\"sess_ec612e07-892e-4a90-8f76-dde6077bb49c\",\"msg_mvexlae3_ccf9468d-6efc-4871-835e-e7a1d3e8bac0\"]"
+      ],
+      "evidence_sha256": "e72728a986d172763457b1389926e586ea93afa0750875a0cef08d5fa34b60fe"
+    },
+    {
+      "id": "apple-rewind-recap-explainer",
+      "project_id": "p-b7dbb089a1d2",
+      "summary": "解释 Apple 2026 年发布的 Live Rewind 与 Siri Recap 功能",
+      "message_refs": [
+        "[\"zcode\",\"sess_ec612e07-892e-4a90-8f76-dde6077bb49c\",\"msg_mvexq1k6_d065a070-39d3-4845-9f0f-35bbaf63c016\"]"
+      ],
+      "evidence_sha256": "b3b306737fb6417575130edecc0b64216c83cfb7a39e4477f5d7e1b35dba4e75"
+    },
+    {
+      "id": "feishu-tencent-diarization-research",
+      "project_id": "p-b7dbb089a1d2",
+      "summary": "查证飞书妙记与腾讯会议是否默认开启说话人区分",
+      "message_refs": [
+        "[\"zcode\",\"sess_120adb4c-b6fc-41cf-a16d-dfee67bb23b5\",\"msg_mveyqorc_1a940ba8-9ffe-41ea-9d2f-6cd9dca8d4e5\"]"
+      ],
+      "evidence_sha256": "ffab8170d26992dbdd2dd66d5d50b756c3366b617b9597475309ef2961f2a464"
+    },
+    {
+      "id": "sign-line-concurrency-capacity",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "结合 BI 与开发者平台数据估算听障产品线各产品的语音并发路数（普通话/方言下的 vivo 听说、通话无障碍、微信无障碍、手语翻译官），弄清并发的计算共识、平均并发与峰值并发差异，以及模型参数量与并发能力的关系（研发据此评估当前并发能否支撑各产品）",
+      "message_refs": [
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvggdh2b_54b769eb-cec2-4fca-aedf-30169192fc44\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvggu872_b4f4cbe9-c5f1-43c6-b98a-278dbdde0233\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgh37tm_d9122892-527f-438e-9628-30fa9490c7a8\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvghvb2b_37e5f71a-1bcb-434a-9758-b684b697ec2a\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgi35gs_153065ea-b375-4a2a-921d-abd26a437492\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgisnxv_34f72605-e8f9-40d5-b607-299970c64e47\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgj0yny_a338e0a3-85a4-4b32-91c9-4586a24e772a\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgmoppx_3fe45d77-77cb-457e-8a33-2f28d83cc8a8\"]",
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgmyshd_fa3e3c09-6707-4733-a715-994edac9bd44\"]"
+      ],
+      "evidence_sha256": "e01f5c031fdd3c47f30bf1c59d6175f6a381d5085da3a673730d51d50cb3f9b6"
+    },
+    {
+      "id": "hearing-survey-design",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "在问卷星制作手语学习与使用调研问卷，按反馈迭代选项设置与文案润色，并复盘草稿完整但润色效果差的原因；按听力测试场景补充评分规则（听不到 0 分、听清 1 分、辨别出方位 2 分，满分 5）",
+      "message_refs": [
+        "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgg7qsw_2bdfb467-63da-44fb-aac8-3c85c916b2a8\"]",
+        "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgiw7gw_f13e4964-0fa7-4d26-9412-e964c6349d34\"]",
+        "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgkkwdc_a38de16d-6362-4a98-b699-66697f359c33\"]",
+        "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvhguhk3_0a386f42-174b-4db6-8806-9541c7c0d25c\"]"
+      ],
+      "evidence_sha256": "c490f36d667befe06f96b70762e1a3124d28571f7cd73d3b80ec6abc7f97d4db"
+    },
+    {
+      "id": "survey-design-workflow",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "沉淀问卷设计工作流：按“问卷为验证问题服务”的思路，先明确要验证的问题与所需信息、再设计题目与选项，把本次问卷的经验总结成可复用的方法",
+      "message_refs": [
+        "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgmvkw6_105f136a-1b89-4bf5-8947-102c89994bc2\"]",
+        "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgn1swf_d3761949-63b4-4974-9327-8433e664fc09\"]",
+        "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgp2uzj_40c03c50-cfc5-4945-b243-0196bbdeb57b\"]"
+      ],
+      "evidence_sha256": "811cdbc84e758f2449e21e0fef3a53d065fad6e9ab26ee4f40820774a4e1911f"
     }
   ],
   "excluded_task_ids": [
