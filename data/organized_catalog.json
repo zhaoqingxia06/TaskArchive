@@ -6577,9 +6577,10 @@
       "message_refs": [
         "[\"zcode\",\"sess_4c349c47-388a-4285-a799-34c3e8e91919\",\"msg_mv1pcocy_6bed7048-4488-4995-ba94-6ac5e199992a\"]",
         "[\"zcode\",\"sess_8cec66f1-f09f-4df9-b4c0-cf15af3ad869\",\"msg_mv8u0x08_0dbadadd-b90e-4854-98be-05debf8c8c63\"]",
-        "[\"zcode\",\"sess_8cec66f1-f09f-4df9-b4c0-cf15af3ad869\",\"msg_mv8w6oe0_3a39a5d1-c56e-4703-a341-e681b0498ed2\"]"
+        "[\"zcode\",\"sess_8cec66f1-f09f-4df9-b4c0-cf15af3ad869\",\"msg_mv8w6oe0_3a39a5d1-c56e-4703-a341-e681b0498ed2\"]",
+        "[\"zcode\",\"sess_4c55648d-05ce-4a6a-b591-ff441251fefd\",\"msg_mvjpw276_086bbc51-c71f-4c5b-bbca-e5eed7b7068c\"]"
       ],
-      "evidence_sha256": "00f1d169eac481f98074f2a0d340bedfa38faa1255d90b79852c708f6f81906a"
+      "evidence_sha256": "7f265eae7fec3110a3daa92bd745cff8764cad21761bc976fcc44f71c91ba90d"
     },
     {
       "id": "agent-ppt-skill-research",
@@ -6834,13 +6835,33 @@
     {
       "id": "hear-call-fusion-demo",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "做一个融合 vivo 听说（语音转文字/文字转语音、区分说话人）与无障碍通话（电话/微信来电弹窗）的手机 UI 交互 demo，让系统更精简；按反馈检查并删除页面无用元素",
+      "summary": "做 vivo 听说 × 无障碍通话融合的手机 UI 交互 demo（给同事演示，可点击交互、ASR 可不实现）：覆盖桌面打开/快捷键（支持长按）打开、全屏↔小窗↔桌面悬浮窗三态切换、通话中小窗常驻；复刻参考录屏并保留交互状态；小窗设置图标改为麦克风/系统音下拉（全屏转小窗默认麦克风、来电小窗默认系统音），讨论在下拉旁加识别暂停/继续按钮的方案与防误触；设置页新增无障碍通话（电话/微信）开关模块并按听说设置页排序；大窗小窗说话人显示一致、小窗增加示例；文本输出框按电话/非电话场景设计显示策略",
       "message_refs": [
         "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mvexjqd5_2cc7f8c1-e5fb-4e92-857a-5792832aafef\"]",
         "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mveyim8n_797a4168-0bc7-4ca8-a557-5a36bd7536bb\"]",
-        "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mveyj4mn_fc253716-bf95-4ba2-9f88-d124fed32531\"]"
+        "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mveyj4mn_fc253716-bf95-4ba2-9f88-d124fed32531\"]",
+        "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mvj6uqkd_0423f165-1ad5-4e5e-ae20-ba6243b09b87\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvj6wjnv_c0b79472-ba99-4f7d-8120-9e7ad93126e3\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjec86a_fc2ec38f-7b41-4e0a-aad5-3cd67f5aeb32\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjeef7z_65264a51-e668-4f58-bc2d-321df34c37ad\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjepgps_2692b120-e7f0-4bc0-8db3-46c9059353d5\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjfj155_744f59f7-a645-42d7-b07e-4bc0477da423\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjg6fx2_b9709e81-cee0-44dc-94c8-1db562332abb\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjghhsi_8245ae0f-86bb-4a1c-8ad7-7767e92af912\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjgiulz_47cadd90-d0c0-4316-8a55-99e180b86811\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjgn21n_ce6eb167-98b8-4ba1-85d6-f7cf3dbe50ec\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjgx891_f0db2e7f-8df1-43e2-bc28-3ae0320c44ff\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjgz50u_1b7d361e-d829-4fc7-9f26-eea8e515c315\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvji6cvq_479b7230-3b5e-4ef5-b276-ffdf1e246a23\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjiaokk_a4a150b4-5668-41e8-b3b5-0fd79e288276\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjib7bm_f9749850-0b9c-4947-af5e-dbdb1c92d7a4\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjif9df_a172b268-5ae7-4867-9ff1-a4088e202bb3\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjiqbs0_3ce01cbe-6d53-464f-bf42-f855113e7555\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjjljdn_f434fd3c-77dc-4411-8732-195a086c43c6\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjkf7wm_12983e23-c62b-4efe-afd1-ddaafd464792\"]",
+        "[\"zcode\",\"sess_f16d3972-3619-4306-b893-c2b946403dcf\",\"msg_mvj6xxsm_59e72578-4a47-47ce-a692-7cc99c91b13d\"]"
       ],
-      "evidence_sha256": "f66482c2cbd8d056c96a95042946487e40b4c702c358cebb3431da507710bbc7"
+      "evidence_sha256": "393ad23bc5c0d5c75aa8025d4c3f3c6635ce1bc4c2882436eab05b3fb1782d00"
     },
     {
       "id": "install-understand-anything",
@@ -6908,15 +6929,16 @@
     {
       "id": "survey-design-workflow",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "沉淀系统化、可复用的问卷设计工作流：调研目的与人群每次不同也能按同一逻辑梳理——以“手语培训人群 + 手语翻译官产品经理”为例先给设计思路，围绕“问卷为验证问题服务”明确要验证的问题与所需信息，再设计题目与选项，保证覆盖全面",
+      "summary": "沉淀系统化、可复用的问卷设计工作流：调研目的与人群每次不同也能按同一逻辑梳理——以“手语培训人群 + 手语翻译官产品经理”为例先给设计思路，围绕“问卷为验证问题服务”明确要验证的问题与所需信息，再设计题目与选项，保证覆盖全面；并把该方法论沉淀为问卷调研方法 Skill",
       "message_refs": [
         "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgmvkw6_105f136a-1b89-4bf5-8947-102c89994bc2\"]",
         "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgn1swf_d3761949-63b4-4974-9327-8433e664fc09\"]",
         "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgp2uzj_40c03c50-cfc5-4945-b243-0196bbdeb57b\"]",
         "[\"zcode\",\"sess_46558bdf-d7ce-45cd-bda8-68def270e14e\",\"msg_mvivys2n_a2978114-3f45-4f27-93b0-910cdcdc0193\"]",
-        "[\"zcode\",\"sess_46558bdf-d7ce-45cd-bda8-68def270e14e\",\"msg_mvix4x8l_55f0f621-c4ab-4abd-b5a6-ae44096b2d13\"]"
+        "[\"zcode\",\"sess_46558bdf-d7ce-45cd-bda8-68def270e14e\",\"msg_mvix4x8l_55f0f621-c4ab-4abd-b5a6-ae44096b2d13\"]",
+        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkffq6k_25e0b684-a16b-4058-b88f-4c71fe98ba7c\"]"
       ],
-      "evidence_sha256": "97901e77c4c85845f935c396689c92b90f45a147dd7fddcfcd9ccfb0c438b03a"
+      "evidence_sha256": "0ca7aaa164dad5c09e996b450daba4ff8255df0e1e7ca0ba22a3192e5cc15e2b"
     },
     {
       "id": "japan-visa-process",
@@ -6973,6 +6995,66 @@
         "[\"zcode\",\"sess_adc17b2a-be63-4e73-920e-cbaa7ae89764\",\"msg_mvj00lev_800e6485-819d-459f-b2a8-a2424b5a2a58\"]"
       ],
       "evidence_sha256": "12f8a90b5cbac3b9eb42e0349d1d560a4ee3f45965286443ccee7aaca9950f53"
+    },
+    {
+      "id": "marketing-video-ui-clips",
+      "project_id": "p-abce905d7428",
+      "summary": "从 vivo 听觉关怀营销视频（webm）按时间段截取画面中右侧手机演示区域的 UI 片段（00:26–00:40、3:45–3:49、42s–53s），并按反馈剪掉前 2 秒",
+      "message_refs": [
+        "[\"zcode\",\"sess_f68d6dbb-f5f3-4777-b5ea-dfb3a2d8c3ef\",\"msg_mvjcs2qk_ffefbe3d-6c74-40ea-841c-95497b2f25e3\"]",
+        "[\"zcode\",\"sess_f68d6dbb-f5f3-4777-b5ea-dfb3a2d8c3ef\",\"msg_mvjdot2c_3281438a-ae79-4b0c-98f2-ffc9eb1bf15e\"]",
+        "[\"zcode\",\"sess_f68d6dbb-f5f3-4777-b5ea-dfb3a2d8c3ef\",\"msg_mvjduwvi_1f3345f9-6168-4186-81e4-1979b649b222\"]",
+        "[\"zcode\",\"sess_f68d6dbb-f5f3-4777-b5ea-dfb3a2d8c3ef\",\"msg_mvjdzb85_6e2b3498-8987-4e96-aa64-cedeb2269dfd\"]",
+        "[\"zcode\",\"sess_f68d6dbb-f5f3-4777-b5ea-dfb3a2d8c3ef\",\"msg_mvje0tkx_e2125323-f404-4be3-b554-fece2da7e489\"]"
+      ],
+      "evidence_sha256": "f5a33bec4e4d45b8a2a1290f73dbfb050d07c1152ca9b7a291319ba7d2fb29d5"
+    },
+    {
+      "id": "sign-intro-ppt-restyle",
+      "project_id": "p-sign-translator-v2",
+      "summary": "优化《手语翻译官介绍文件》PPT 的排版与设计：不增加文字只改排版，保持白底、简洁、高级；新增学习模块四功能页（适配竖版手机录屏、文案逐条展示、页面编码与右上角产品标识、灰色小字页眉），前后页风格统一，并把自制渐变背景适当融入页面",
+      "message_refs": [
+        "[\"zcode\",\"sess_38b181ce-4f88-486b-b783-4004bde16367\",\"msg_mvje8u4n_76e14d17-da83-4fff-9114-0319a7ae04d8\"]",
+        "[\"zcode\",\"sess_38b181ce-4f88-486b-b783-4004bde16367\",\"msg_mvjeftyr_7a50ef76-1768-4b18-86de-89cac45dd15a\"]",
+        "[\"zcode\",\"sess_b57ee7d6-b0d6-4413-aa26-f0653a151d6c\",\"msg_mvjfhdg8_944520ae-688e-4eff-9875-69610fce8205\"]",
+        "[\"zcode\",\"sess_b57ee7d6-b0d6-4413-aa26-f0653a151d6c\",\"msg_mvjgj3t1_1f8931e2-105b-42bc-b818-36d5d1465e3c\"]",
+        "[\"zcode\",\"sess_b57ee7d6-b0d6-4413-aa26-f0653a151d6c\",\"msg_mvjgucpd_c90da7fd-c9ce-42a9-b4f7-7e5a88a93404\"]",
+        "[\"zcode\",\"sess_b57ee7d6-b0d6-4413-aa26-f0653a151d6c\",\"msg_mvjhdegs_7b650f78-fbdb-4e61-ae1e-041c1d55fc09\"]",
+        "[\"zcode\",\"sess_b57ee7d6-b0d6-4413-aa26-f0653a151d6c\",\"msg_mvjhihwz_23da309b-e73d-4447-b59a-9113567c9d9b\"]",
+        "[\"zcode\",\"sess_b57ee7d6-b0d6-4413-aa26-f0653a151d6c\",\"msg_mvji8wlv_d2095581-e72f-4c6e-87c5-eacb91ebc5f5\"]",
+        "[\"zcode\",\"sess_b57ee7d6-b0d6-4413-aa26-f0653a151d6c\",\"msg_mvjilr9o_3a1064ab-867f-427f-9421-5ea73df92e32\"]",
+        "[\"zcode\",\"sess_f440b07b-38af-4ab9-9669-be8b71b4cded\",\"msg_mvjizv8g_92c195ac-2a65-4e14-9b07-a1cc32c21cd6\"]",
+        "[\"zcode\",\"sess_f440b07b-38af-4ab9-9669-be8b71b4cded\",\"msg_mvjj0j1k_706b67bb-381e-4e52-80af-2c39296f1c9c\"]"
+      ],
+      "evidence_sha256": "cb17b7ed2145730b40fdd74fadafb7decd36a748e94ab4f047a905993bdc69a2"
+    },
+    {
+      "id": "blue-gradient-png",
+      "project_id": "p-f49da5e15da4",
+      "summary": "参考样例重新制作（非抠图）一张蓝色渐变的 PNG 背景图",
+      "message_refs": [
+        "[\"zcode\",\"sess_27329c49-9340-49eb-bbbd-1e5b7224fb1a\",\"msg_mvka5cdw_5a4b83e7-4635-4c94-993d-b42e9cfd4fe1\"]",
+        "[\"zcode\",\"sess_27329c49-9340-49eb-bbbd-1e5b7224fb1a\",\"msg_mvkama5z_74cd2cfc-1cfd-475c-bb96-862e7c365a2e\"]"
+      ],
+      "evidence_sha256": "c977c9e05c10ac68ee2665008265abaa0d660419659b74353ea10cea8156d589"
+    },
+    {
+      "id": "ppt-cross-device-fonts",
+      "project_id": "p-7117be67781a",
+      "summary": "解决外出演讲时 PPT 放到其它设备上字体编码出错的问题",
+      "message_refs": [
+        "[\"zcode\",\"sess_e98a746a-3231-4432-84e6-052f6847c484\",\"msg_mvkbjmih_1846220b-da96-4937-b006-5d1a497a0af2\"]"
+      ],
+      "evidence_sha256": "c729ba331a17d149bb42925ac8b326d7a51277c569b49a0452f8176036e484e0"
+    },
+    {
+      "id": "tsing-ppt-skill",
+      "project_id": "p-7117be67781a",
+      "summary": "把 2026.10 Tsing 的 PPT 模板沉淀为个人 PPT Skill：每页页面编码、浅蓝渐变背景（首页/过渡页）加纯白内容页、右上角产品标识等规范，今后按此体系制作 PPT",
+      "message_refs": [
+        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkcqsye_406cb9e9-7e23-46db-b26e-c817d722ecec\"]"
+      ],
+      "evidence_sha256": "249666dcff975daa1b99dcb10fe8f5f7705c9483ce9650bd7abc96310add095a"
     }
   ],
   "excluded_task_ids": [
