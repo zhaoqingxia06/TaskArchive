@@ -402,6 +402,13 @@
       "category_id": "life",
       "description": "制定能坚持下去的减肥健身计划：膝盖友好的月度健身日历与免费 AI 健身工具调研。",
       "aliases": []
+    },
+    {
+      "id": "p-bag-design-tool",
+      "name": "包包设计工具",
+      "category_id": "product",
+      "description": "帆布包结构设计、裁剪图纸生成与渲染优化。",
+      "aliases": []
     }
   ],
   "requirements": [
@@ -7064,6 +7071,470 @@
         "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkq3o4v_2b115731-f737-41df-af07-8a86d7edf990\"]"
       ],
       "evidence_sha256": "06248777acef1ebfca0bf2fbd1e236a6bb02eab2bc54e42bf52d571b3662fbd7"
+    },
+    {
+      "id": "req-zc-bag-tool",
+      "project_id": "p-bag-design-tool",
+      "summary": "迭代帆布包设计工具：修正包体结构与渲染效果、调整印花刺绣细节、评估产品命名 made、设计潮流图案，并要求自主持续优化到真实渲染目标，最终按材质尺寸生成可执行的裁剪图纸与制作步骤",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_0f64021d-d168-4733-b3d3-cd638b5b8896",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "task_id": "zcode:sess_5a0f3ac0-328f-4807-ae24-51cdaae053bf",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "task_id": "zcode:sess_ee991648-4aea-4adc-84e6-b816eba8c0f6",
+          "indices": [
+            0
+          ]
+        },
+        {
+          "task_id": "zcode:sess_c37c1904-bf6e-48df-a1b4-a873545c20c1",
+          "indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "task_id": "zcode:sess_75487dc7-763c-4244-9aa2-b23b6514aaa7",
+          "indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "task_id": "zcode:sess_10c4286f-6b29-4f32-a021-1c5bcae72960",
+          "indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "task_id": "zcode:sess_00c4bb56-6505-4205-a4c6-fd6d5e35addc",
+          "indices": [
+            0
+          ]
+        },
+        {
+          "task_id": "zcode:sess_ffde261a-5827-47fa-a88b-6d96fb2aec67",
+          "indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-site-polish",
+      "project_id": "p-8d72e3b067a2",
+      "summary": "个人网站展示优化：输出站点网址、调整「关于我」模块的角色定位排版、统一各作品卡片高度并完善每个作品的模块内容结构",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_0888d864-1623-4984-b40d-a7c06f378b83",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "task_id": "zcode:sess_63f26200-ed0c-42af-8058-0acdfca2952a",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "task_id": "zcode:sess_7f3b99bb-b02a-48ca-9981-e4e6b9082b27",
+          "indices": [
+            0
+          ]
+        },
+        {
+          "task_id": "zcode:sess_20764a3f-8e85-4878-8649-6ff59efda248",
+          "indices": [
+            0
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-chatnote",
+      "project_id": "p-059755bb8099",
+      "summary": "接入 GitHub 上的 ChatNote 内容收藏工具并协作处理后续需求",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_627a3dfa-9fb3-41a0-a21b-aca0a1e7f543",
+          "indices": [
+            0
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-resume-polish",
+      "project_id": "p-b52062b20ed5",
+      "summary": "打磨简历「个人优势」的写法，并优化 vivo 经历中产品需求交互与交付部分的表述，突出项目亮点而非流水账",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_a9474b7e-4056-4e0f-9e34-9b24967dd1b3",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "task_id": "zcode:sess_03d76ba8-0613-429c-8afd-e859840a50d4",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "task_id": "zcode:sess_32b68995-5c8e-4042-892e-75e5da3786ec",
+          "indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "task_id": "zcode:sess_add61944-28f6-458e-97d9-2dd81686f512",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-file-cleanup",
+      "project_id": "p-pc-cleanup",
+      "summary": "整理电脑文件夹与 SD 卡文件：查看目录内容、给出整理思路并删除空文件夹",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_75cb31fa-4df0-4fd1-8dd0-85aa0a00b821",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "task_id": "zcode:sess_5f13eaab-ed36-47ce-93af-45f31732bca5",
+          "indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "task_id": "zcode:sess_f6d9394f-1f2c-4848-935b-8d7a27d1e9aa",
+          "indices": [
+            0
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-skill-install",
+      "project_id": "p-bc90278379c9",
+      "summary": "安装 understand anything Skill 用于项目工作",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_e7620298-a981-455e-80df-37c35f1bfbb2",
+          "indices": [
+            0
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-figma-review",
+      "project_id": "p-f3553805fa8f",
+      "summary": "打开 Figma 设计稿链接查看内容并配合后续调整",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_52fd7270-2449-41b1-a3f5-903ddbbef762",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-stepfun-asr",
+      "project_id": "p-b7dbb089a1d2",
+      "summary": "调研阶跃星辰在语音语言模型与语音转写 API 上的能力",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_19abaf8d-c32c-4748-b703-34e529bf182e",
+          "indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-binance",
+      "project_id": "p-6128bb64fe25",
+      "summary": "了解币安是什么及其业务模式",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_7ed69ae4-2b63-4d9c-abf9-b718a1652c3c",
+          "indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-xixiang-outing",
+      "project_id": "p-198139c15d45",
+      "summary": "咨询深圳西乡地铁站周边的出游推荐",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_9e7ff427-3ac5-45f7-a1fc-3ba0a37813c2",
+          "indices": [
+            0
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-quota-5h",
+      "project_id": "p-12b3e30398a4",
+      "summary": "了解 Agent 工具 5 小时额度的设计机制：滚动 5 小时还是按天分段",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_3a449713-5f7b-4413-a025-6ad200ca70cf",
+          "indices": [
+            0
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-archive-url",
+      "project_id": "p-9b6182eb6228",
+      "summary": "确认 TaskArchive 仓库网址的可访问性",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_93e23f8f-2624-4cfe-a156-16df39003fd0",
+          "indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-misc-quickqa",
+      "project_id": "p-d2909f1647e7",
+      "summary": "零散快问快答：.LRF 文件的用途、布料材质的英文说法等",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_e6c20677-0690-4c38-aae2-5c87b1708912",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "task_id": "zcode:sess_151a6b6e-be8f-4f91-b4f6-f7d1817a6cab",
+          "indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-voice-input",
+      "project_id": "p-b7dbb089a1d2",
+      "summary": "希望 Agent 工具支持语音输入，弥补智谱等工具缺少语音输入选项的不便",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_a0f1b988-f60b-46c6-96d2-bb2e69e5f019",
+          "indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-job-prepare",
+      "project_id": "p-6abdeded6838",
+      "summary": "针对目标岗位梳理应聘需要做或学习的准备事项",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_f8374d6c-d9cf-46ad-8826-1d3bd5195ef9",
+          "indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-ppt-gradient",
+      "project_id": "p-7117be67781a",
+      "summary": "制作蓝色渐变背景的 PPT 幻灯片页面",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_c54c8bc0-7de4-4010-a552-267ecf5b23b1",
+          "indices": [
+            0
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-ainews-visual",
+      "project_id": "p-0e2af613e7df",
+      "summary": "优化 AiNews 行业简报网站的视觉风格：摆脱老式观感、提升高级感，并解答日历模块红色深度含义",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_e04de750-9494-41e6-9038-2be2ae26f5f6",
+          "indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
     }
   ],
   "excluded_task_ids": [
