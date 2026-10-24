@@ -6767,15 +6767,20 @@
     {
       "id": "sign-app-stats-analysis",
       "project_id": "p-sign-translator-v2",
-      "summary": "在 vivo 开发者平台查看手语翻译官 App 下载量与运营数据变化，并结合 9-28 上线的手语翻译官 2.0 分析哪些增长与该版本相关：跟踪周末数据变化、输出 9.19–10.19 新增用户曲线，并用 1~3 句话总结 2.0 上线后的表现",
+      "summary": "在 vivo 开发者平台查看手语翻译官 App 下载量与运营数据变化，并结合 9-28 上线的手语翻译官 2.0 分析哪些增长与该版本相关：跟踪周末数据变化、输出 9.19–10.19 新增用户曲线并用 1~3 句话总结 2.0 上线后表现；以 2026.7.3（1.4 版本全量）为断点对比前后两段的人均使用次数等指标变化，整理 25.11–26.10 月均日活，并把 2.0 上线前后新增用户、日活、人均使用次数、人均时长做成图表（数据直接标注、上线前按月拆分）配文字趋势总结",
       "message_refs": [
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvatcfhk_4f266ab9-badb-4750-b6cf-43fd4dc1ada3\"]",
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvatfqex_87da67d4-bdd5-4989-b298-cd3e4b50a705\"]",
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvekpy96_a368bf6e-92b9-4616-bad0-7fe5406cde2d\"]",
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvekvgw5_8335bb61-f87d-40a0-ba90-8909aedc9c04\"]",
-        "[\"zcode\",\"sess_8d82ddce-c45a-4dde-939f-2edf7f7a02dd\",\"msg_mven7u1i_5aa8199f-4e47-47f1-82cd-f638813026a9\"]"
+        "[\"zcode\",\"sess_8d82ddce-c45a-4dde-939f-2edf7f7a02dd\",\"msg_mven7u1i_5aa8199f-4e47-47f1-82cd-f638813026a9\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkost71_8349a1e6-8581-424e-8fd8-649f953c9829\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkp7ybb_76e313a0-a7b1-42be-a81f-0998dd2df1b5\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkph4mk_e34f3802-8c36-4221-89d2-1ce14e0213f1\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkput23_6f1ea0a0-b3e0-46ab-9560-faaf458a1126\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkqcjxg_320282bc-be99-4ef3-a29e-e318e4ff4409\"]"
       ],
-      "evidence_sha256": "aaf010544509d8a47f3fd1b6d4072363cd23bae30787098eb6a9920119576345",
+      "evidence_sha256": "3e8b84dd3d662db8d958db4efbdb5e778589ed520b69a9b306a17d999dfd7128",
       "note": "开发者平台账号密码已在公开原文中脱敏。"
     },
     {
@@ -6821,15 +6826,17 @@
     {
       "id": "sign-bi-daily-monitor",
       "project_id": "p-sign-translator-v2",
-      "summary": "接入手语翻译官 BI 看板（bi.vmic.xyz/dashboard/38157）并验证可查阅：分析 9-28 上线 2.0 后整体数据是正常波动还是缓慢增长，以及手语视频生成、AI 手语陪练功能的使用情况；从看板筛选关键用户数据项建立每天 10:00 的数据监控，并整理手语翻译官与 vivo 听说的日活及使用频率数据",
+      "summary": "接入手语翻译官 BI 看板（bi.vmic.xyz/dashboard/38157）并验证可查阅：分析 9-28 上线 2.0 后整体数据是正常波动还是缓慢增长，以及手语视频生成、AI 手语陪练功能的使用情况；从看板筛选关键用户数据项建立每天 10:00 的数据监控，并整理手语翻译官与 vivo 听说的日活及使用频率数据；另输出看板 38157 过去 12 个月逐月趋势、看板 38159 过去 7 天日均使用人数与人均使用次数的文字总结",
       "message_refs": [
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveksb19_440a4740-cdcf-4594-9be3-ebf3e0006f30\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvekyo4w_445e4744-c467-40a5-9b3b-88bde8b104b8\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvemyaym_d01b0899-2777-41d7-ae6e-c285eafd0c68\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveoglzv_2f34a0d3-37e8-4aa7-ab76-0233878cf7e4\"]",
-        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvf1qjmd_876b379f-6beb-4699-90ad-1e30e7fcf9bb\"]"
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvf1qjmd_876b379f-6beb-4699-90ad-1e30e7fcf9bb\"]",
+        "[\"zcode\",\"sess_3ba382c3-e401-416b-8830-d1464cae18b7\",\"msg_mvkq7f4o_88bdffa1-e1d9-4abb-9f53-fe93d6b63334\"]",
+        "[\"zcode\",\"sess_70b9307d-264b-485a-ace3-99bd027a126d\",\"msg_mvkq9qud_b5b64279-733c-4886-a980-cb596ed5ef87\"]"
       ],
-      "evidence_sha256": "3259622d641b8d20f591308ff80631c87ae119de81f8d1fee5f0449577322462",
+      "evidence_sha256": "945179963cbd4780ce50541eadfdfa701f84465cc9bf3064f44a91e8693530d5",
       "scheduled": true
     },
     {
@@ -7050,11 +7057,13 @@
     {
       "id": "tsing-ppt-skill",
       "project_id": "p-7117be67781a",
-      "summary": "把 2026.10 Tsing 的 PPT 模板沉淀为个人 PPT Skill：每页页面编码、浅蓝渐变背景（首页/过渡页）加纯白内容页、右上角产品标识等规范，今后按此体系制作 PPT",
+      "summary": "把 2026.10 Tsing 的 PPT 模板沉淀为个人 PPT Skill：每页页面编码、浅蓝渐变背景（首页/过渡页）加纯白内容页、右上角产品标识等规范，今后按此体系制作 PPT；用该 Skill 实际制作问卷调研思路 PPT，并纠正理解偏差——参考页面里放的是界面图，不是排版样式",
       "message_refs": [
-        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkcqsye_406cb9e9-7e23-46db-b26e-c817d722ecec\"]"
+        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkcqsye_406cb9e9-7e23-46db-b26e-c817d722ecec\"]",
+        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvklcfzu_dbd224df-955d-43ac-8074-ce5051c2c70c\"]",
+        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkq3o4v_2b115731-f737-41df-af07-8a86d7edf990\"]"
       ],
-      "evidence_sha256": "249666dcff975daa1b99dcb10fe8f5f7705c9483ce9650bd7abc96310add095a"
+      "evidence_sha256": "06248777acef1ebfca0bf2fbd1e236a6bb02eab2bc54e42bf52d571b3662fbd7"
     }
   ],
   "excluded_task_ids": [
