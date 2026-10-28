@@ -6774,7 +6774,7 @@
     {
       "id": "sign-app-stats-analysis",
       "project_id": "p-sign-translator-v2",
-      "summary": "在 vivo 开发者平台查看手语翻译官 App 下载量与运营数据变化，并结合 9-28 上线的手语翻译官 2.0 分析哪些增长与该版本相关：跟踪周末数据变化、输出 9.19–10.19 新增用户曲线并用 1~3 句话总结 2.0 上线后表现；以 2026.7.3（1.4 版本全量）为断点对比前后两段的人均使用次数等指标变化，整理 25.11–26.10 月均日活，并把 2.0 上线前后新增用户、日活、人均使用次数、人均时长做成图表（数据直接标注、上线前按月拆分）配文字趋势总结",
+      "summary": "在 vivo 开发者平台查看手语翻译官 App 下载量与运营数据变化，并结合 9-28 上线的手语翻译官 2.0 分析哪些增长与该版本相关：跟踪周末数据变化、输出 9.19–10.19 新增用户曲线并用 1~3 句话总结 2.0 上线后表现；以 2026.7.3（1.4 版本全量）为断点对比前后两段的人均使用次数等指标变化，整理 25.11–26.10 月均日活，并把 2.0 上线前后新增用户、日活、人均使用次数、人均时长做成图表（数据直接标注、上线前按月拆分）配文字趋势总结；再制定上线前后关键数据变化的统计方案（只看 BI 平台、留存不纳入、补充子功能日活与次数，排除生成保存转化率与手语输入占比），输出月度数据表并把口径纠正为全量（vivo 品牌仅占 32%），用校准系数让 10 月平均日活贴合真实的 1600",
       "message_refs": [
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvatcfhk_4f266ab9-badb-4750-b6cf-43fd4dc1ada3\"]",
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvatfqex_87da67d4-bdd5-4989-b298-cd3e4b50a705\"]",
@@ -6785,9 +6785,16 @@
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkp7ybb_76e313a0-a7b1-42be-a81f-0998dd2df1b5\"]",
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkph4mk_e34f3802-8c36-4221-89d2-1ce14e0213f1\"]",
         "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkput23_6f1ea0a0-b3e0-46ab-9560-faaf458a1126\"]",
-        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkqcjxg_320282bc-be99-4ef3-a29e-e318e4ff4409\"]"
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvkqcjxg_320282bc-be99-4ef3-a29e-e318e4ff4409\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvovxsm1_d9d71b0f-2886-4b5a-b3bb-b948de7849bb\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvowbv1k_afbd4c8a-a0c5-4092-bf66-f921442f2b39\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvowfs0j_d456fa37-0536-4c87-8c9f-ce92b6a6e1be\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvowp093_dc52d7a6-010d-41f8-8380-ac7d15197e5d\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvp4lp08_fa4f1417-cd3f-44c4-9741-50bf2ff847e4\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvp5joh2_e5917e32-08b2-44da-bd1b-1c1169dab92c\"]",
+        "[\"zcode\",\"sess_0d18a40b-fde5-4ed1-9cba-6462a9063e25\",\"msg_mvp64vyf_0a1ab94f-628e-4ffa-bd5e-64983a766791\"]"
       ],
-      "evidence_sha256": "3e8b84dd3d662db8d958db4efbdb5e778589ed520b69a9b306a17d999dfd7128",
+      "evidence_sha256": "d7a7dcd2235f880e8be4d26bc6467016c9faddaa5b48ab5b74dcc2770bd59091",
       "note": "开发者平台账号密码已在公开原文中脱敏。"
     },
     {
@@ -6849,7 +6856,7 @@
     {
       "id": "hear-call-fusion-demo",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "做 vivo 听说 × 无障碍通话融合的手机 UI 交互 demo（给同事演示，可点击交互、ASR 可不实现）：覆盖桌面打开/快捷键（支持长按）打开、全屏↔小窗↔桌面悬浮窗三态切换、通话中小窗常驻；复刻参考录屏并保留交互状态；小窗设置图标改为麦克风/系统音下拉（全屏转小窗默认麦克风、来电小窗默认系统音），讨论在下拉旁加识别暂停/继续按钮的方案与防误触；设置页新增无障碍通话（电话/微信）开关模块并按听说设置页排序；大窗小窗说话人显示一致、小窗增加示例；文本输出框按电话/非电话场景设计显示策略",
+      "summary": "做 vivo 听说 × 无障碍通话融合的手机 UI 交互 demo（给同事演示，可点击交互、ASR 可不实现）：覆盖桌面打开/快捷键（支持长按）打开、全屏↔小窗↔桌面悬浮窗三态切换、通话中小窗常驻；复刻参考录屏并保留交互状态；小窗设置图标改为麦克风/系统音下拉（全屏转小窗默认麦克风、来电小窗默认系统音），讨论识别暂停/继续按钮的方案与防误触；设置页新增无障碍通话（电话/微信）开关模块并按听说设置页排序；大窗小窗说话人显示一致、小窗增加示例；文本输出框按电话/非电话场景设计显示策略；并按互联网大厂的工作流与标准评审当前方案的不合理之处并给出解决方案（先不改）",
       "message_refs": [
         "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mvexjqd5_2cc7f8c1-e5fb-4e92-857a-5792832aafef\"]",
         "[\"zcode\",\"sess_35270360-d753-48f2-825f-486fee701d45\",\"msg_mveyim8n_797a4168-0bc7-4ca8-a557-5a36bd7536bb\"]",
@@ -6873,9 +6880,10 @@
         "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjiqbs0_3ce01cbe-6d53-464f-bf42-f855113e7555\"]",
         "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjjljdn_f434fd3c-77dc-4411-8732-195a086c43c6\"]",
         "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvjkf7wm_12983e23-c62b-4efe-afd1-ddaafd464792\"]",
-        "[\"zcode\",\"sess_f16d3972-3619-4306-b893-c2b946403dcf\",\"msg_mvj6xxsm_59e72578-4a47-47ce-a692-7cc99c91b13d\"]"
+        "[\"zcode\",\"sess_f16d3972-3619-4306-b893-c2b946403dcf\",\"msg_mvj6xxsm_59e72578-4a47-47ce-a692-7cc99c91b13d\"]",
+        "[\"zcode\",\"sess_3fcba11d-20f1-4ba7-adcc-714ca505b27d\",\"msg_mvq3u7kt_95725c8a-2f93-4ac1-b0df-d38d00586406\"]"
       ],
-      "evidence_sha256": "393ad23bc5c0d5c75aa8025d4c3f3c6635ce1bc4c2882436eab05b3fb1782d00"
+      "evidence_sha256": "5183922df5a895de4a0e0fb8aa5441f636da0454c465f57534c47accc5f06bce"
     },
     {
       "id": "install-understand-anything",
@@ -7064,13 +7072,15 @@
     {
       "id": "tsing-ppt-skill",
       "project_id": "p-7117be67781a",
-      "summary": "把 2026.10 Tsing 的 PPT 模板沉淀为个人 PPT Skill：每页页面编码、浅蓝渐变背景（首页/过渡页）加纯白内容页、右上角产品标识等规范，今后按此体系制作 PPT；用该 Skill 实际制作问卷调研思路 PPT，并纠正理解偏差——参考页面里放的是界面图，不是排版样式",
+      "summary": "把 2026.10 Tsing 的 PPT 模板沉淀为个人 PPT Skill：每页页面编码、浅蓝渐变背景（首页/过渡页）加纯白内容页、右上角产品标识等规范，今后按此体系制作 PPT；用该 Skill 实际制作问卷调研思路 PPT；据反馈修正对模板的理解——参考页面里放的是界面图而非排版样式，且自己的 PPT 方法是“总分总”结构（先总述定位再分模块展开），Skill 需 get 到这套方法论",
       "message_refs": [
         "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkcqsye_406cb9e9-7e23-46db-b26e-c817d722ecec\"]",
         "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvklcfzu_dbd224df-955d-43ac-8074-ce5051c2c70c\"]",
-        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkq3o4v_2b115731-f737-41df-af07-8a86d7edf990\"]"
+        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkq3o4v_2b115731-f737-41df-af07-8a86d7edf990\"]",
+        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvpe7mx8_284de88f-b79e-4b4c-a1c0-3ffb2b0683a0\"]",
+        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvpeonb4_2c283356-a14c-4edd-aa85-51218d623a39\"]"
       ],
-      "evidence_sha256": "06248777acef1ebfca0bf2fbd1e236a6bb02eab2bc54e42bf52d571b3662fbd7"
+      "evidence_sha256": "d09339e8649d093596f0af4ca6a6f29d2286f922e830d68a17a70e4f00129007"
     },
     {
       "id": "req-zc-bag-tool",
@@ -7549,6 +7559,17 @@
       ],
       "scheduled": false,
       "status": "unknown"
+    },
+    {
+      "id": "sign-survey-insight-report",
+      "project_id": "p-sign-translator-v2",
+      "summary": "基于手语翻译官调研问卷的原始数据（CSV）输出 HTML 总结性洞察报告，按反馈继续深挖洞察，并根据问卷结果做用户画像：这批用户如何分类、处于什么状态、有什么需求",
+      "message_refs": [
+        "[\"zcode\",\"sess_02654a2c-a206-4b23-b050-4a40518e26e0\",\"msg_mvovd5gx_fafba107-f86c-47c7-a3a8-096e5cdbf659\"]",
+        "[\"zcode\",\"sess_02654a2c-a206-4b23-b050-4a40518e26e0\",\"msg_mvp51hvk_95fc41cf-818c-4e31-b72a-57705811355d\"]",
+        "[\"zcode\",\"sess_02654a2c-a206-4b23-b050-4a40518e26e0\",\"msg_mvq3pjej_1505e0cd-e87c-4843-a722-4323ee8f3e93\"]"
+      ],
+      "evidence_sha256": "ace6c33f542ad5d01e2c920c738dc5753ec67f374781f7afd129fa7aecbbfcd3"
     }
   ],
   "excluded_task_ids": [
