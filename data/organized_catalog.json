@@ -6436,15 +6436,19 @@
     {
       "id": "ambient-sound-roadmap-research",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "针对听障用户调研环境音识别还可新增的需求方向，并调研小米 MiDashengLM 落地的具体产品 feature、音频理解大模型格局与厂商投入动机",
+      "summary": "针对听障用户调研环境音识别还能新增哪些需求：调研小米 MiDashengLM 落地的具体产品 feature、音频理解大模型格局与厂商投入动机；并制定手机声音识别新增声音类型的产品方案——先出方案思路，再做竞品对比矩阵与数据集盘点、用户证据收集（含已有用户反馈的水流声、油烟机运行声、电动车喇叭声、警笛声），按优先级整理成 md 表格（每个声音对应各项证据），要能说服老板与算法同事",
       "message_refs": [
         "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muyww4rd_2d783433-07fe-4adb-ad3b-27b0a8543a54\"]",
         "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz58677_6904885c-b2ef-4b0d-b383-a02f074bbe94\"]",
         "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz5g4th_7330f363-ad12-4e95-885d-69412d691237\"]",
         "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz6b28a_95e52d9c-b002-428c-9d8c-83f4f6e38ad2\"]",
-        "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz6i5bh_168206f0-b573-4c33-861b-6f57815bf41d\"]"
+        "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz6i5bh_168206f0-b573-4c33-861b-6f57815bf41d\"]",
+        "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvua889m_8dee511c-7440-44cd-99b1-81f2fe3087c5\"]",
+        "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvuancwz_41fa4b73-2e5c-4c85-b467-dc4a396fefbe\"]",
+        "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvuarelx_3f358cb3-f78e-4396-b24b-fa8a16770c66\"]",
+        "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvufe1o0_6ebb28fa-f84e-48fd-9aec-2cd75fe88cda\"]"
       ],
-      "evidence_sha256": "04c5e3dcd98cc39bdb8b3aabe0371f14e36a862dde6364cc7a140ce7180c6aa7"
+      "evidence_sha256": "211c8650feab38ebafb9d2a14bb44cee35b63146e805bcb884099edfedfd3936"
     },
     {
       "id": "sound-requirements-user-value",
