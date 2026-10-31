@@ -6436,7 +6436,7 @@
     {
       "id": "ambient-sound-roadmap-research",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "针对听障用户调研环境音识别还能新增哪些需求：调研小米 MiDashengLM 落地的具体产品 feature、音频理解大模型格局与厂商投入动机；并制定手机声音识别新增声音类型的产品方案——先出方案思路，再做竞品对比矩阵与数据集盘点、用户证据收集（含已有用户反馈的水流声、油烟机运行声、电动车喇叭声、警笛声），按优先级整理成 md 表格（每个声音对应各项证据），要能说服老板与算法同事",
+      "summary": "针对听障用户调研环境音识别还能新增哪些需求：调研小米 MiDashengLM 落地的具体产品 feature、音频理解大模型格局与厂商投入动机；并制定手机声音识别新增声音类型的产品方案——先出方案思路，再做竞品对比矩阵与数据集盘点、用户证据收集，按优先级整理成 md 表格（每个声音对应各项证据，含已有用户反馈的水流声、油烟机运行声、电动车喇叭声、警笛声），要能说服老板与算法同事；并补充用户规模与需求频次证据：调研大陆/台湾/香港听障司机与听障外卖员数量（滴滴等平台）验证警笛声与电动车喇叭声的价值，统计每个声音有多少用户提出过",
       "message_refs": [
         "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muyww4rd_2d783433-07fe-4adb-ad3b-27b0a8543a54\"]",
         "[\"zcode\",\"sess_b1898364-8588-4905-a521-30411b0e285e\",\"msg_muz58677_6904885c-b2ef-4b0d-b383-a02f074bbe94\"]",
@@ -6446,9 +6446,11 @@
         "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvua889m_8dee511c-7440-44cd-99b1-81f2fe3087c5\"]",
         "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvuancwz_41fa4b73-2e5c-4c85-b467-dc4a396fefbe\"]",
         "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvuarelx_3f358cb3-f78e-4396-b24b-fa8a16770c66\"]",
-        "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvufe1o0_6ebb28fa-f84e-48fd-9aec-2cd75fe88cda\"]"
+        "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvufe1o0_6ebb28fa-f84e-48fd-9aec-2cd75fe88cda\"]",
+        "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvuli909_0951296f-8d58-4428-9e63-b325f06827a0\"]",
+        "[\"zcode\",\"session_60921ff4aea4d32c917353894f1ad1b0\",\"msg_mvuphs50_8833a975-0719-4691-9c5b-f10c3b535395\"]"
       ],
-      "evidence_sha256": "211c8650feab38ebafb9d2a14bb44cee35b63146e805bcb884099edfedfd3936"
+      "evidence_sha256": "5a154d515ed8997660109dd04db76926f598010de0e044132bd616ea646fffd9"
     },
     {
       "id": "sound-requirements-user-value",
@@ -6955,16 +6957,17 @@
     {
       "id": "survey-design-workflow",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "沉淀系统化、可复用的问卷设计工作流：调研目的与人群每次不同也能按同一逻辑梳理——以“手语培训人群 + 手语翻译官产品经理”为例先给设计思路，围绕“问卷为验证问题服务”明确要验证的问题与所需信息，再设计题目与选项，保证覆盖全面；并把该方法论沉淀为问卷调研方法 Skill",
+      "summary": "沉淀系统化、可复用的问卷设计工作流：调研目的与人群每次不同也能按同一逻辑梳理——围绕“问卷为验证问题服务”明确要验证的问题与所需信息，再设计题目与选项；并把该方法论沉淀为问卷调研方法 Skill；进一步系统梳理产品研发各阶段分别有哪些用户研究方法、各自目标是什么、不同研究中变与不变的是什么，反思每次做问卷痛苦的根源",
       "message_refs": [
         "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgmvkw6_105f136a-1b89-4bf5-8947-102c89994bc2\"]",
         "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgn1swf_d3761949-63b4-4974-9327-8433e664fc09\"]",
         "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgp2uzj_40c03c50-cfc5-4945-b243-0196bbdeb57b\"]",
         "[\"zcode\",\"sess_46558bdf-d7ce-45cd-bda8-68def270e14e\",\"msg_mvivys2n_a2978114-3f45-4f27-93b0-910cdcdc0193\"]",
         "[\"zcode\",\"sess_46558bdf-d7ce-45cd-bda8-68def270e14e\",\"msg_mvix4x8l_55f0f621-c4ab-4abd-b5a6-ae44096b2d13\"]",
-        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkffq6k_25e0b684-a16b-4058-b88f-4c71fe98ba7c\"]"
+        "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkffq6k_25e0b684-a16b-4058-b88f-4c71fe98ba7c\"]",
+        "[\"zcode\",\"sess_4c55648d-05ce-4a6a-b591-ff441251fefd\",\"msg_mvuxpzdz_61a059fa-5484-4436-8cd4-d43f75f46c08\"]"
       ],
-      "evidence_sha256": "0ca7aaa164dad5c09e996b450daba4ff8255df0e1e7ca0ba22a3192e5cc15e2b"
+      "evidence_sha256": "5419f1d1b4061d4e60fd62af222fd9e2aa77c693c347a6a42104ce3429b17810"
     },
     {
       "id": "japan-visa-process",
@@ -7625,6 +7628,42 @@
         "[\"zcode\",\"sess_02654a2c-a206-4b23-b050-4a40518e26e0\",\"msg_mvq3pjej_1505e0cd-e87c-4843-a722-4323ee8f3e93\"]"
       ],
       "evidence_sha256": "ace6c33f542ad5d01e2c920c738dc5753ec67f374781f7afd129fa7aecbbfcd3"
+    },
+    {
+      "id": "hearing-aid-survey-design",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "设计 vivo 听力测试与辅助听力功能的立项调研问卷（听力情况与耳机使用体验：听声音的重要场景、裸耳听力体验、现有设备与辅助工具、不同场景使用方式）；面向听障人群润色问题与选项表达（简洁易懂），先输出 md 确认，补充在用耳机品牌多选题，再用腾讯问卷 Skill 生成问卷",
+      "message_refs": [
+        "[\"zcode\",\"session_aad5dcaf93fe7f3cbd28a4ba7393f430\",\"msg_mvun2hxk_c0fbdda6-52da-4170-b497-bb3ab3ac6d3b\"]",
+        "[\"zcode\",\"session_801f4a8050e8fbfb2b3528e39c3892a1\",\"msg_mvup17uj_c20c832e-5f6a-4430-ace4-2d42d9b39151\"]",
+        "[\"zcode\",\"session_801f4a8050e8fbfb2b3528e39c3892a1\",\"msg_mvup5197_99aa1125-8226-43b0-8ba8-de5e416ca25a\"]",
+        "[\"zcode\",\"session_801f4a8050e8fbfb2b3528e39c3892a1\",\"msg_mvupbsin_fecb2b87-1b64-4b9b-89bc-931c7f558abd\"]"
+      ],
+      "evidence_sha256": "74537a37a822d304eebda17c309673511a4936b3e82d88a189a36084f8e1319b"
+    },
+    {
+      "id": "watch-sound-survey-design",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "延续听力问卷，为 vivo 手表的声音识别与语音转文字功能设计调研问卷：用户基本信息、对环境音的辨别能力（电动车喇叭、油烟机、水流、警笛、咳嗽、狗叫、猫叫、微波炉提示音 8 种声音的可听到/可辨别矩阵题）、在用手表品牌与已有助听设备情况；先输出 md 确认，迭代删改题目后直接在文档上修改定稿",
+      "message_refs": [
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupdc80_e255d29b-5bef-49be-890f-0929bff6ee18\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupecy5_5b9964d9-2cb8-4673-9ca3-0a735584cdaa\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvuprhf4_1e4c85d9-c188-4b2b-89bf-3ef3af228d74\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupt2ck_82a1a9ec-accf-4f2a-8a33-41c28cbbbb0b\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupuhcy_09fcc9a4-4c06-4029-b55d-67df3f69af14\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupzo8o_34c10b8e-1d67-4f72-92d9-ecec922ef7c1\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvuwekgd_617511cc-6645-4afb-a6ae-67153b5b5480\"]"
+      ],
+      "evidence_sha256": "29ca6f8fff490fab4fe224b95cd09e05e58520096e836c12dea7ab03e2e0d86e"
+    },
+    {
+      "id": "daily-top5-hotspots",
+      "project_id": "p-0e2af613e7df",
+      "summary": "查询当天的 top5 热点新闻",
+      "message_refs": [
+        "[\"zcode\",\"sess_4c55648d-05ce-4a6a-b591-ff441251fefd\",\"msg_mvux1iae_480a3257-dd46-4ae6-b011-0492d46a29d1\"]"
+      ],
+      "evidence_sha256": "80ecb1ca3f55c49b53ae08fe680dc6bcfd8d559ec23f796cef48a61ae0f8e2d3"
     }
   ],
   "excluded_task_ids": [
