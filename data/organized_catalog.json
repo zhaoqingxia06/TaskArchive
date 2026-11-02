@@ -7632,19 +7632,23 @@
     {
       "id": "hearing-aid-survey-design",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "设计 vivo 听力测试与辅助听力功能的立项调研问卷（听力情况与耳机使用体验：听声音的重要场景、裸耳听力体验、现有设备与辅助工具、不同场景使用方式）；面向听障人群润色问题与选项表达（简洁易懂），先输出 md 确认，补充在用耳机品牌多选题，再用腾讯问卷 Skill 生成问卷",
+      "summary": "设计 vivo 听力测试与辅助听力功能的立项调研问卷（听力情况与耳机使用体验：听声音的重要场景、裸耳听力体验、现有设备与辅助工具、不同场景使用方式）；面向听障人群润色问题与选项表达（简洁易懂），先输出 md 确认，补充在用耳机品牌多选题，再用腾讯问卷 Skill 生成问卷。后期用户自行重新梳理最新文本，要求只基于该版本做问题描述准确性与选项合理性的优化，其它不乱动、调整前先告知征得同意，最终只保留最后一版",
       "message_refs": [
         "[\"zcode\",\"session_aad5dcaf93fe7f3cbd28a4ba7393f430\",\"msg_mvun2hxk_c0fbdda6-52da-4170-b497-bb3ab3ac6d3b\"]",
         "[\"zcode\",\"session_801f4a8050e8fbfb2b3528e39c3892a1\",\"msg_mvup17uj_c20c832e-5f6a-4430-ace4-2d42d9b39151\"]",
         "[\"zcode\",\"session_801f4a8050e8fbfb2b3528e39c3892a1\",\"msg_mvup5197_99aa1125-8226-43b0-8ba8-de5e416ca25a\"]",
-        "[\"zcode\",\"session_801f4a8050e8fbfb2b3528e39c3892a1\",\"msg_mvupbsin_fecb2b87-1b64-4b9b-89bc-931c7f558abd\"]"
+        "[\"zcode\",\"session_801f4a8050e8fbfb2b3528e39c3892a1\",\"msg_mvupbsin_fecb2b87-1b64-4b9b-89bc-931c7f558abd\"]",
+        "[\"zcode\",\"session_63d1cb0ab081b62c7ec55712b720d883\",\"msg_mvyop952_35fe5dcc-9b97-4a61-9dc3-040732e0513b\"]",
+        "[\"zcode\",\"session_63d1cb0ab081b62c7ec55712b720d883\",\"msg_mvyovwfb_d7ae1a3e-4b94-42f8-93a4-1163e98e6d2c\"]",
+        "[\"zcode\",\"session_63d1cb0ab081b62c7ec55712b720d883\",\"msg_mvypwaxv_b15b98bb-ebea-463f-a9d4-dff3a3bc48f3\"]",
+        "[\"zcode\",\"session_63d1cb0ab081b62c7ec55712b720d883\",\"msg_mvyqe6ho_f3aa3139-1301-4f4a-beef-175f0bd1d53f\"]"
       ],
-      "evidence_sha256": "74537a37a822d304eebda17c309673511a4936b3e82d88a189a36084f8e1319b"
+      "evidence_sha256": "5daa76b2e656e79398f1f2621ed7822fcca47a3480da15009411a0484546c15a"
     },
     {
       "id": "watch-sound-survey-design",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "延续听力问卷，为 vivo 手表的声音识别与语音转文字功能设计调研问卷：用户基本信息、对环境音的辨别能力（电动车喇叭、油烟机、水流、警笛、咳嗽、狗叫、猫叫、微波炉提示音 8 种声音的可听到/可辨别矩阵题）、在用手表品牌与已有助听设备情况；先输出 md 确认，迭代删改题目后直接在文档上修改定稿",
+      "summary": "延续听力问卷，为 vivo 手表的声音识别与语音转文字功能设计调研问卷：用户基本信息、对环境音的辨别能力（电动车喇叭、油烟机、水流、警笛、咳嗽、狗叫、猫叫、微波炉提示音 8 种声音的可听到/可辨别矩阵题）、在用手表品牌与已有助听设备情况；先输出 md 确认后迭代定稿。深化要求：调研结论必须覆盖使用价值、使用场景、使用意愿与购买意愿；Q13/Q14 等场景题要突出“手机不行、必须手表”的不可替代场景（或直接问哪些原因会选择手表而非手机），Q6 考虑直接问用户希望识别哪些声音、补充手机声音识别功能使用经历与手机不在身边的场景；语音转文字部分前移（比声音识别更重要），按反馈调整题目顺序，最终只保留最后一版",
       "message_refs": [
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupdc80_e255d29b-5bef-49be-890f-0929bff6ee18\"]",
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupecy5_5b9964d9-2cb8-4673-9ca3-0a735584cdaa\"]",
@@ -7652,9 +7656,16 @@
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupt2ck_82a1a9ec-accf-4f2a-8a33-41c28cbbbb0b\"]",
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupuhcy_09fcc9a4-4c06-4029-b55d-67df3f69af14\"]",
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupzo8o_34c10b8e-1d67-4f72-92d9-ecec922ef7c1\"]",
-        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvuwekgd_617511cc-6645-4afb-a6ae-67153b5b5480\"]"
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvuwekgd_617511cc-6645-4afb-a6ae-67153b5b5480\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvylxcl5_8ff69186-280f-4926-8721-53a1461b7425\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvymc4fu_e11600b6-b0fa-472e-949b-3104446fa751\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvymyw44_b6629ede-30c2-4623-8520-636b27e0580e\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvynkyfn_338a0eb9-d258-4752-b3fe-9025fce13622\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvyo6qzn_5d3186a9-54a5-4f5d-862d-00486f43845a\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvyoggac_7b517cdf-0e24-4d71-8482-0aa91175c8db\"]",
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvyq0stc_f2386c7f-98a1-47c4-892a-4dcf75c4e7c0\"]"
       ],
-      "evidence_sha256": "29ca6f8fff490fab4fe224b95cd09e05e58520096e836c12dea7ab03e2e0d86e"
+      "evidence_sha256": "bac5808d44935c7deb6bccd0d3bf09c1f9640cfa1af1644ed454c6be32a6786c"
     },
     {
       "id": "daily-top5-hotspots",
