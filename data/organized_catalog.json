@@ -6957,7 +6957,7 @@
     {
       "id": "survey-design-workflow",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "沉淀系统化、可复用的问卷设计工作流：调研目的与人群每次不同也能按同一逻辑梳理——围绕“问卷为验证问题服务”明确要验证的问题与所需信息，再设计题目与选项；并把该方法论沉淀为问卷调研方法 Skill；进一步系统梳理产品研发各阶段分别有哪些用户研究方法、各自目标是什么、不同研究中变与不变的是什么，反思每次做问卷痛苦的根源",
+      "summary": "沉淀系统化、可复用的问卷设计工作流：围绕“问卷为验证问题服务”明确要验证的问题与所需信息，再设计题目与选项，并把方法论沉淀为问卷调研方法 Skill；系统梳理产品研发各阶段用户研究方法与变与不变；复盘反复修改问卷的经验教训——问题描述、选项设置、逻辑细节三个层面，多选题要设上限并提示按重要程度选择、加“其它，请填写”，避免下次再犯",
       "message_refs": [
         "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgmvkw6_105f136a-1b89-4bf5-8947-102c89994bc2\"]",
         "[\"zcode\",\"sess_456cfb20-e14f-44b9-8f23-14f72df6c0bc\",\"msg_mvgn1swf_d3761949-63b4-4974-9327-8433e664fc09\"]",
@@ -6965,9 +6965,12 @@
         "[\"zcode\",\"sess_46558bdf-d7ce-45cd-bda8-68def270e14e\",\"msg_mvivys2n_a2978114-3f45-4f27-93b0-910cdcdc0193\"]",
         "[\"zcode\",\"sess_46558bdf-d7ce-45cd-bda8-68def270e14e\",\"msg_mvix4x8l_55f0f621-c4ab-4abd-b5a6-ae44096b2d13\"]",
         "[\"zcode\",\"sess_95093c01-dde8-42a4-ba08-de8c6a4f22d4\",\"msg_mvkffq6k_25e0b684-a16b-4058-b88f-4c71fe98ba7c\"]",
-        "[\"zcode\",\"sess_4c55648d-05ce-4a6a-b591-ff441251fefd\",\"msg_mvuxpzdz_61a059fa-5484-4436-8cd4-d43f75f46c08\"]"
+        "[\"zcode\",\"sess_4c55648d-05ce-4a6a-b591-ff441251fefd\",\"msg_mvuxpzdz_61a059fa-5484-4436-8cd4-d43f75f46c08\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvza55ar_4fb3a173-487c-446b-b192-ad2479b3ee79\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvzali1a_b374c243-e8db-4335-99bc-07c2019a80f1\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvzb184b_c5824c77-7392-441d-8a2b-83a7b0a91748\"]"
       ],
-      "evidence_sha256": "5419f1d1b4061d4e60fd62af222fd9e2aa77c693c347a6a42104ce3429b17810"
+      "evidence_sha256": "d55be59eece3b2bf140402a3c499f46be9ac78bdc983e2372f3f4780082e93a8"
     },
     {
       "id": "japan-visa-process",
@@ -7632,7 +7635,7 @@
     {
       "id": "hearing-aid-survey-design",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "设计 vivo 听力测试与辅助听力功能的立项调研问卷（听力情况与耳机使用体验：听声音的重要场景、裸耳听力体验、现有设备与辅助工具、不同场景使用方式）；面向听障人群润色问题与选项表达（简洁易懂），先输出 md 确认，补充在用耳机品牌多选题，再用腾讯问卷 Skill 生成问卷。后期用户自行重新梳理最新文本，要求只基于该版本做问题描述准确性与选项合理性的优化，其它不乱动、调整前先告知征得同意，最终只保留最后一版",
+      "summary": "设计 vivo 听力测试与辅助听力功能的立项调研问卷（听力情况与耳机使用体验），面向听障人群润色表达、补充在用耳机品牌题，并用腾讯问卷 Skill 生成在线问卷；后期用户自行梳理最新版、只做描述准确性与选项合理性的优化；上线后统计问题数量、排查重复可精简项，统一上下文与描述后重新生成问卷，调整部分顺序（第 4/5 部分前移）且确认不破坏已设置的题目逻辑，排查两题是否冲突、把“最多选 3 项”备注改为“选择最重要的 3 项”；回收前 5 份答卷后检验问题设置与选项缺陷，并整理原始数据使每题的用户选择清晰",
       "message_refs": [
         "[\"zcode\",\"session_aad5dcaf93fe7f3cbd28a4ba7393f430\",\"msg_mvun2hxk_c0fbdda6-52da-4170-b497-bb3ab3ac6d3b\"]",
         "[\"zcode\",\"session_801f4a8050e8fbfb2b3528e39c3892a1\",\"msg_mvup17uj_c20c832e-5f6a-4430-ace4-2d42d9b39151\"]",
@@ -7641,14 +7644,28 @@
         "[\"zcode\",\"session_63d1cb0ab081b62c7ec55712b720d883\",\"msg_mvyop952_35fe5dcc-9b97-4a61-9dc3-040732e0513b\"]",
         "[\"zcode\",\"session_63d1cb0ab081b62c7ec55712b720d883\",\"msg_mvyovwfb_d7ae1a3e-4b94-42f8-93a4-1163e98e6d2c\"]",
         "[\"zcode\",\"session_63d1cb0ab081b62c7ec55712b720d883\",\"msg_mvypwaxv_b15b98bb-ebea-463f-a9d4-dff3a3bc48f3\"]",
-        "[\"zcode\",\"session_63d1cb0ab081b62c7ec55712b720d883\",\"msg_mvyqe6ho_f3aa3139-1301-4f4a-beef-175f0bd1d53f\"]"
+        "[\"zcode\",\"session_63d1cb0ab081b62c7ec55712b720d883\",\"msg_mvyqe6ho_f3aa3139-1301-4f4a-beef-175f0bd1d53f\"]",
+        "[\"zcode\",\"session_2fc4a424ed923d313a5d1b33e9d003e7\",\"msg_mvyqeywd_3e5e3078-53e6-4a25-a4d4-018072646e9d\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvyysoof_d5a61e09-aa78-4274-8e7a-c2fcd4ab18c2\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvyysvk2_a2019243-451b-4359-8fa6-acc7018078f0\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvyyx3pe_9a8d80d9-daca-4641-af9b-e0f980356556\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvyzc8h2_32a2bb16-7f94-4930-9876-b52a2d2cc8fa\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvyzcitk_ddb532ab-4196-4560-995d-1ac83bb6cc03\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvz0t6e7_73d558eb-dcd0-4fe8-a0ea-0c854e4830cd\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvz121st_5ae0ec96-33c3-4334-ba4b-fbc6eae96b22\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvz1vejw_85c3625a-01c5-4f13-a012-da9c06d4305d\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvz1z1wt_d5c18b5d-6596-404e-b30e-cd1f629a5a4f\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvz2dctw_e0acaf12-e412-4dad-bd57-1efd1ea8e887\"]",
+        "[\"zcode\",\"session_98261a9aba100f73ab3e972feb0c0011\",\"msg_mvz4qucj_84757e46-75f0-4074-90ec-855793eb86ef\"]",
+        "[\"zcode\",\"session_bb43cd7ae8c8c14773641baa830af51d\",\"msg_mw002vy4_bb4598d5-2ddc-49aa-812f-69515332321f\"]",
+        "[\"zcode\",\"session_bb43cd7ae8c8c14773641baa830af51d\",\"msg_mw021sxi_40280e9c-e5ee-4c78-a0e6-3325ef3e5a39\"]"
       ],
-      "evidence_sha256": "5daa76b2e656e79398f1f2621ed7822fcca47a3480da15009411a0484546c15a"
+      "evidence_sha256": "baec01dca3fe3a882132639f70f931532d1faa2a7ed933abf7fd85edd3758cd0"
     },
     {
       "id": "watch-sound-survey-design",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "延续听力问卷，为 vivo 手表的声音识别与语音转文字功能设计调研问卷：用户基本信息、对环境音的辨别能力（电动车喇叭、油烟机、水流、警笛、咳嗽、狗叫、猫叫、微波炉提示音 8 种声音的可听到/可辨别矩阵题）、在用手表品牌与已有助听设备情况；先输出 md 确认后迭代定稿。深化要求：调研结论必须覆盖使用价值、使用场景、使用意愿与购买意愿；Q13/Q14 等场景题要突出“手机不行、必须手表”的不可替代场景（或直接问哪些原因会选择手表而非手机），Q6 考虑直接问用户希望识别哪些声音、补充手机声音识别功能使用经历与手机不在身边的场景；语音转文字部分前移（比声音识别更重要），按反馈调整题目顺序，最终只保留最后一版",
+      "summary": "延续听力问卷，为 vivo 手表的声音识别与语音转文字功能设计调研问卷：环境音辨别能力矩阵题（8 种声音可听到/可辨别）、在用手表品牌与助听设备情况，结论须覆盖使用价值、使用场景、使用意愿与购买意愿，场景题突出“手机不行、必须手表”的不可替代场景，语音转文字部分前移；用腾讯问卷 Skill 做成在线问卷，并讨论是否与耳机问卷合并发放（担心用户理解成本）；回收答卷后继续优化选项覆盖面：手表识别声音的时机、使用语音转文字的场景等选项重设更全面",
       "message_refs": [
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupdc80_e255d29b-5bef-49be-890f-0929bff6ee18\"]",
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupecy5_5b9964d9-2cb8-4673-9ca3-0a735584cdaa\"]",
@@ -7663,9 +7680,15 @@
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvynkyfn_338a0eb9-d258-4752-b3fe-9025fce13622\"]",
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvyo6qzn_5d3186a9-54a5-4f5d-862d-00486f43845a\"]",
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvyoggac_7b517cdf-0e24-4d71-8482-0aa91175c8db\"]",
-        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvyq0stc_f2386c7f-98a1-47c4-892a-4dcf75c4e7c0\"]"
+        "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvyq0stc_f2386c7f-98a1-47c4-892a-4dcf75c4e7c0\"]",
+        "[\"zcode\",\"session_85fd964df533beb877e23a8e70b9bb39\",\"msg_mvyqfzvi_59124efd-6ddb-495b-a3f4-675e18195729\"]",
+        "[\"zcode\",\"session_85fd964df533beb877e23a8e70b9bb39\",\"msg_mvyx3plh_6e68222c-2fdb-469c-8023-30ec041adaf9\"]",
+        "[\"zcode\",\"session_85fd964df533beb877e23a8e70b9bb39\",\"msg_mvyx4ltt_43d20323-e69c-4df6-945f-fa106951258a\"]",
+        "[\"zcode\",\"session_bb43cd7ae8c8c14773641baa830af51d\",\"msg_mw01k4kq_67fbf8c0-86ef-42d8-aa0b-688b32a3d755\"]",
+        "[\"zcode\",\"session_bb43cd7ae8c8c14773641baa830af51d\",\"msg_mw01o7yo_d9b0902c-a473-4a2d-ad02-96953403fea8\"]",
+        "[\"zcode\",\"session_bb43cd7ae8c8c14773641baa830af51d\",\"msg_mw01u8a2_4c27051c-ae1b-448a-bc66-56e725aca010\"]"
       ],
-      "evidence_sha256": "bac5808d44935c7deb6bccd0d3bf09c1f9640cfa1af1644ed454c6be32a6786c"
+      "evidence_sha256": "cf8728f5855f4b6d518ce369cf00ee5145ce6bade00ebef77bc283d58d79ad82"
     },
     {
       "id": "daily-top5-hotspots",
@@ -7675,6 +7698,15 @@
         "[\"zcode\",\"sess_4c55648d-05ce-4a6a-b591-ff441251fefd\",\"msg_mvux1iae_480a3257-dd46-4ae6-b011-0492d46a29d1\"]"
       ],
       "evidence_sha256": "80ecb1ca3f55c49b53ae08fe680dc6bcfd8d559ec23f796cef48a61ae0f8e2d3"
+    },
+    {
+      "id": "agent-speed-inquiry",
+      "project_id": "p-12b3e30398a4",
+      "summary": "反馈 Agent 最近处理任务的速度明显变慢，询问发生了什么",
+      "message_refs": [
+        "[\"zcode\",\"session_582ac5b3bc75b2fcd0b2f1a9bad06348\",\"msg_mw02vwx3_3d1e8938-4745-4dd9-8647-b07005afc5ee\"]"
+      ],
+      "evidence_sha256": "1cc0b2492c830fa85fe644511816dc7e8a55180bd57fa1924f7e92e8ecf8df25"
     }
   ],
   "excluded_task_ids": [
