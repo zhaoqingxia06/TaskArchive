@@ -7624,13 +7624,14 @@
     {
       "id": "sign-survey-insight-report",
       "project_id": "p-sign-translator-v2",
-      "summary": "基于手语翻译官调研问卷的原始数据（CSV）输出 HTML 总结性洞察报告，按反馈继续深挖洞察，并根据问卷结果做用户画像：这批用户如何分类、处于什么状态、有什么需求",
+      "summary": "基于手语翻译官/手语培训调研问卷的原始数据（CSV）输出 HTML 总结性洞察报告，按反馈继续深挖，并根据问卷结果做用户画像（用户分类、状态与需求）；拿到最新回收结果后按麦肯锡研究方法再挖掘一轮，尽可能提炼对产品决策有用的洞察结论",
       "message_refs": [
         "[\"zcode\",\"sess_02654a2c-a206-4b23-b050-4a40518e26e0\",\"msg_mvovd5gx_fafba107-f86c-47c7-a3a8-096e5cdbf659\"]",
         "[\"zcode\",\"sess_02654a2c-a206-4b23-b050-4a40518e26e0\",\"msg_mvp51hvk_95fc41cf-818c-4e31-b72a-57705811355d\"]",
-        "[\"zcode\",\"sess_02654a2c-a206-4b23-b050-4a40518e26e0\",\"msg_mvq3pjej_1505e0cd-e87c-4843-a722-4323ee8f3e93\"]"
+        "[\"zcode\",\"sess_02654a2c-a206-4b23-b050-4a40518e26e0\",\"msg_mvq3pjej_1505e0cd-e87c-4843-a722-4323ee8f3e93\"]",
+        "[\"zcode\",\"session_ea390b61057d4d468038960d8cc656f2\",\"msg_mw0eplbd_9b3b7a30-df63-46df-b289-009085f95d92\"]"
       ],
-      "evidence_sha256": "ace6c33f542ad5d01e2c920c738dc5753ec67f374781f7afd129fa7aecbbfcd3"
+      "evidence_sha256": "7eb83c239f1a17bc5c4f910c879954be38b951426ef5307300a5840b7b2480a5"
     },
     {
       "id": "hearing-aid-survey-design",
