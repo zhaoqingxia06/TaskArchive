@@ -79,6 +79,7 @@ def build_organized(root, tasks, legacy_html, previous_data=None):
         (root/'index.html').write_text(page)
         (dist/'index.html').write_text(page)
         (dist/'knowledge.html').write_text((root/'assets/knowledge.html').read_text(encoding='utf-8'), encoding='utf-8')
+        (dist/'materials.html').write_text((root/'assets/materials.html').read_text(encoding='utf-8'), encoding='utf-8')
         a.write(dist/'knowledge.json', a.read(root/'data/knowledge.json'))
         # Source snapshots and Git history retain legacy records without republishing unfiltered HTML.
         a.write(dist/'tasks.json',data)
