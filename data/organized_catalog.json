@@ -7793,6 +7793,34 @@
       ],
       "scheduled": false,
       "status": "unknown"
+    },
+    {
+      "id": "chatgpt-personal-site-url",
+      "project_id": "p-8d72e3b067a2",
+      "summary": "排查个人网站无法打开的问题，并将确认可访问的网址更新到仓库",
+      "message_refs": [
+        "[\"chatgpt\",\"local-chatgpt-taskarchive-site-20261111\",\"site-unreachable\"]",
+        "[\"chatgpt\",\"local-chatgpt-taskarchive-site-20261111\",\"site-url-update\"]"
+      ],
+      "evidence_sha256": "0535df192322c6d887377fe3963efc772cd44782297c9d2bc82af2c13ccc6763"
+    },
+    {
+      "id": "chatgpt-source-activity-trend",
+      "project_id": "p-9b6182eb6228",
+      "summary": "在来源筛选处查看 ChatGPT、Codex 和 ZCode 最近一个月每日归档消息的可视化趋势",
+      "message_refs": [
+        "[\"chatgpt\",\"local-chatgpt-taskarchive-site-20261111\",\"source-chart\"]"
+      ],
+      "evidence_sha256": "4e914df1e973ad9b7be4b27e310792844d124f8bc2394fdb733f974a3eed6807"
+    },
+    {
+      "id": "chatgpt-daily-archive-sync",
+      "project_id": "p-9b6182eb6228",
+      "summary": "按现有分类、项目、需求和原文结构，每天增量整理 ChatGPT 网页端需求并更新任务档案",
+      "message_refs": [
+        "[\"chatgpt\",\"local-chatgpt-taskarchive-site-20261111\",\"daily-sync\"]"
+      ],
+      "evidence_sha256": "a3c3aa5b7ee4c475cabf65320fece96655f9e8c3b1713c889702fdd8bd935f38"
     }
   ],
   "excluded_task_ids": [
