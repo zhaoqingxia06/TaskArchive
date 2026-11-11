@@ -3,7 +3,7 @@
   "source": "chatgpt",
   "client": "web",
   "coverage": {
-    "scope": "部分本会话可见的真实请求；本地归档标识，原平台消息 ID 和逐条发送时间未提供；不代表完整历史"
+    "scope": "包含本会话可见请求和部分 ChatGPT 历史检索摘要；历史摘要非逐字原文，覆盖不完整，原始消息标识和时间未核验。"
   },
   "conversations": [
     {
@@ -43,6 +43,39 @@
           "role": "user",
           "sent_at": null,
           "text": "[https://github.com/zhaoqingxia06/TaskArchive](https://github.com/zhaoqingxia06/TaskArchive) 按照这个仓库的要求，把我在当前这个平台上每天想用 ChatGPT的需求，按照这个网站上已有的一个结构形式，每天更新到这个网站上面。"
+        }
+      ]
+    },
+    {
+      "id": "local-retrieval-summary-20261111",
+      "messages": [
+        {
+          "id": "s-translation",
+          "role": "user",
+          "sent_at": null,
+          "text": "检索摘要：查找 Anthropic 官方关于员工使用 Claude Code 的 PDF，随后讨论逐段英中翻译与网页双栏翻译工具，要求图片占位、同步滚动、选词句联动高亮，并反馈翻译失败。",
+          "record_kind": "legacy_summary"
+        },
+        {
+          "id": "s-producthunt",
+          "role": "user",
+          "sent_at": null,
+          "text": "检索摘要：查找近期 Product Hunt 热门产品，分析产品特点，并借鉴 beacon.sh 思考 TaskArchive 的优化方向。",
+          "record_kind": "legacy_summary"
+        },
+        {
+          "id": "s-hearing-flow",
+          "role": "user",
+          "sent_at": null,
+          "text": "检索摘要：讨论听力测试后是否设置“应用到耳机”按钮，以及耳机是否需要在线；后续提出统一从耳机设置进入并从健康数据获取结果。",
+          "record_kind": "legacy_summary"
+        },
+        {
+          "id": "s-apple-health",
+          "role": "user",
+          "sent_at": null,
+          "text": "检索摘要：分析 Apple 健康听觉模块的产品设计，并讨论没有耳机或 Apple Watch 时的数据来源。",
+          "record_kind": "legacy_summary"
         }
       ]
     }

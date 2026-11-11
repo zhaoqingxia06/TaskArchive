@@ -7821,6 +7821,42 @@
         "[\"chatgpt\",\"local-chatgpt-taskarchive-site-20261111\",\"daily-sync\"]"
       ],
       "evidence_sha256": "a3c3aa5b7ee4c475cabf65320fece96655f9e8c3b1713c889702fdd8bd935f38"
+    },
+    {
+      "id": "retrieval-20261111-translation",
+      "project_id": "p-abce905d7428",
+      "summary": "查找 Claude Code 官方资料，探索逐段翻译及网页双栏翻译工具，支持同步滚动、选中联动和图片占位。",
+      "message_refs": [
+        "[\"chatgpt\",\"local-retrieval-summary-20261111\",\"s-translation\"]"
+      ],
+      "evidence_sha256": "d622fb1b8047619991dc5fe02011caf9e19c17ea212995703adbe0558342f965"
+    },
+    {
+      "id": "retrieval-20261111-producthunt",
+      "project_id": "p-6c1991f61706",
+      "summary": "调研 Product Hunt 热门产品，并借鉴 beacon.sh 评估 TaskArchive 的优化机会。",
+      "message_refs": [
+        "[\"chatgpt\",\"local-retrieval-summary-20261111\",\"s-producthunt\"]"
+      ],
+      "evidence_sha256": "c77a19bafe985a14669a0c5c2e8492b4865637eeaea56f56401c4e092001a4af"
+    },
+    {
+      "id": "retrieval-20261111-hearing-flow",
+      "project_id": "p-b7dbb089a1d2",
+      "summary": "梳理听力测试结果应用至耳机的入口与设备在线要求。",
+      "message_refs": [
+        "[\"chatgpt\",\"local-retrieval-summary-20261111\",\"s-hearing-flow\"]"
+      ],
+      "evidence_sha256": "ef1d539d2d496b88243d44ce52a42cfea5b98554c8eb112fb61597792badb28d"
+    },
+    {
+      "id": "retrieval-20261111-apple-health",
+      "project_id": "p-b7dbb089a1d2",
+      "summary": "分析 Apple 健康听觉模块及缺少耳机或手表时的数据来源。",
+      "message_refs": [
+        "[\"chatgpt\",\"local-retrieval-summary-20261111\",\"s-apple-health\"]"
+      ],
+      "evidence_sha256": "4e1f4f6ba7f9892e99b7c817179b0816c2266752c48ac7e7e89cd201f3fbb2bc"
     }
   ],
   "excluded_task_ids": [
