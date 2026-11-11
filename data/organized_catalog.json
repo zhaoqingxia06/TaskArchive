@@ -6651,13 +6651,16 @@
     {
       "id": "disk-usage-analysis",
       "project_id": "p-pc-cleanup",
-      "summary": "分析电脑磁盘占用（区分系统文件、应用数据与个人文件）并分批执行清理：OEM 安装包缓存、崩溃转储、npm/Chrome 缓存、应用更新包、临时文件与回收站等",
+      "summary": "分析电脑磁盘占用（区分系统文件、应用数据与个人文件）并分批执行清理：OEM 安装包缓存、崩溃转储、npm/Chrome 缓存、应用更新包、临时文件与回收站等；2026-11 又一轮：先分析不删，随后执行第一档安全清理（约 10.5GB）与第二档清理",
       "message_refs": [
         "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_muklhcl7_6ac4c3b5-5a9b-4377-a0a9-293604478891\"]",
         "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_mukmgk7t_b7aa67f8-4546-44d4-861b-68d3ed9eaaa2\"]",
-        "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_muko0elh_7293fc73-0a68-4f36-adda-c008ef9d5167\"]"
+        "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_muko0elh_7293fc73-0a68-4f36-adda-c008ef9d5167\"]",
+        "[\"zcode\",\"session_a38ca2b80380e6981b317697418f8e5e\",\"msg_mwap6p4l_c0d5e280-2873-46b3-8a9c-23486fe6f14f\"]",
+        "[\"zcode\",\"session_a38ca2b80380e6981b317697418f8e5e\",\"msg_mwaqqozo_95850314-fc4f-4ee8-9db3-53c479d5b5e6\"]",
+        "[\"zcode\",\"session_a38ca2b80380e6981b317697418f8e5e\",\"msg_mwbhuiwi_dd713344-9fe4-4a47-80fe-95940c4a83d0\"]"
       ],
-      "evidence_sha256": "bcc170f4d90025cb0e7a08433577cea188fcf2150c255cd15360b9762173882b"
+      "evidence_sha256": "8ef762d990bfad6f112f0d0fc594ad0ee8a57412bedf1cf6909eb98a246144d6"
     },
     {
       "id": "d-drive-reorganize",
@@ -6846,7 +6849,7 @@
     {
       "id": "sign-bi-daily-monitor",
       "project_id": "p-sign-translator-v2",
-      "summary": "接入手语翻译官 BI 看板（bi.vmic.xyz/dashboard/38157）并验证可查阅：分析 9-28 上线 2.0 后整体数据是正常波动还是缓慢增长，以及手语视频生成、AI 手语陪练功能的使用情况；从看板筛选关键用户数据项建立每天 10:00 的数据监控，并整理手语翻译官与 vivo 听说的日活及使用频率数据；另输出看板 38157 过去 12 个月逐月趋势、看板 38159 过去 7 天日均使用人数与人均使用次数的文字总结",
+      "summary": "接入手语翻译官 BI 看板并建立每天 10:00 的数据监控，筛选关键用户数据项，整理手语翻译官与 vivo 听说的日活及使用频率数据；输出看板 38157 过去 12 个月逐月趋势、看板 38159 过去 7 天日均使用总结；全面整理看板 38158：App 与各子功能（语音转手语、手语转语音、词汇/句子学习、AI 手语陪练、手语视频生成）的日活、使用次数、时长与 3 日留存，App 与子功能同表对比、以指标为横轴跨功能对比，剔除疑似异常数据，标注 30 天均值与最高最低代表值便于直接汇报；新增用户留存与活跃用户留存明细合成趋势图，各功能每日日活与平均线标注（看板仅统计单渠道，11.08 实际 1750 人按比例折算，9.08–9.28 与 9.28–11.08 分段平均线），对比 25/26 年各月平均日活、人均时长与人均次数（含 12 个月均值中位数），计算 10.15–11.08 各功能人均使用次数并可视化，继续挖掘看板中有价值的数据并配结论与图表",
       "message_refs": [
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveksb19_440a4740-cdcf-4594-9be3-ebf3e0006f30\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvekyo4w_445e4744-c467-40a5-9b3b-88bde8b104b8\"]",
@@ -6854,9 +6857,33 @@
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveoglzv_2f34a0d3-37e8-4aa7-ab76-0233878cf7e4\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvf1qjmd_876b379f-6beb-4699-90ad-1e30e7fcf9bb\"]",
         "[\"zcode\",\"sess_3ba382c3-e401-416b-8830-d1464cae18b7\",\"msg_mvkq7f4o_88bdffa1-e1d9-4abb-9f53-fe93d6b63334\"]",
-        "[\"zcode\",\"sess_70b9307d-264b-485a-ace3-99bd027a126d\",\"msg_mvkq9qud_b5b64279-733c-4886-a980-cb596ed5ef87\"]"
+        "[\"zcode\",\"sess_70b9307d-264b-485a-ace3-99bd027a126d\",\"msg_mvkq9qud_b5b64279-733c-4886-a980-cb596ed5ef87\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw929y0h_5dde3e8d-011c-4799-aeb9-0dec56cdcacc\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw92efqa_3d2de1e6-7810-4380-9d59-fc7ae1f493a3\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw93vrx6_5f0b2a84-936b-4b90-ba01-79fa84b1c79c\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw93x0ge_f18365c0-1f8d-41d8-b64a-447e0bae1e0b\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw94zgny_c3aa1630-e376-4bcf-8bf7-cd13e3e1add2\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw950k9b_7be0feca-eca9-4d78-9fa1-abb16d44a7b3\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw95at9u_100e0ed0-978c-423b-87cc-89578b5947ed\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw98fi91_ba2ecf66-e47f-4a04-b2f8-867fabdd1ec8\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw98hg3v_98868510-9ea6-4056-ba60-e2b3f9c9f95b\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw9dcibm_e084b7d3-4739-4f08-aa26-655d1da904ab\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw9diede_f4f066c9-89eb-4964-bb15-5f12e600181e\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw9dry30_a3fbad2f-c434-41b4-835c-e7c4a12fe8e7\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw9dxm9y_717bc1e7-5523-4fb2-9e71-2d96eb0dbb18\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw9eca2z_d2fb06c7-6ed4-498f-8f73-1e3a28dcf47c\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mw9ekge2_9033663d-8a59-48d1-8caf-b253d11b3a3b\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mwa11f3n_d4d834c4-838b-4bd1-8b32-892ae7017d5c\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mwa178m7_6bc0d4e8-cf41-4830-9813-bbdfee8eb5ee\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mwa19ky2_e501f863-14a4-4d9a-902b-0c8ff15e91ef\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mwa2023e_1ce5a0e0-86ac-4522-a230-e69e79945bed\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mwa26h4s_e3bef4f3-9f85-4942-9004-04d4bef459cd\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mwa2s73d_b4aaf910-9fd4-4c30-8acf-695e3ba45e47\"]",
+        "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mwa2w79y_1b0ad9f1-ecb5-4444-a02a-91b5919195e6\"]",
+        "[\"zcode\",\"session_aaf4f133d78cc8288e437bbc4bad878d\",\"msg_mwa2qbaa_df29afad-7702-4e7e-b1f1-7f8f720833ac\"]",
+        "[\"zcode\",\"session_f581b6272363faa2106d45d13cd46749\",\"msg_mwa2xwop_6b36603f-d23d-4b92-a8a6-9a2b2b819e9d\"]"
       ],
-      "evidence_sha256": "945179963cbd4780ce50541eadfdfa701f84465cc9bf3064f44a91e8693530d5",
+      "evidence_sha256": "1d80a0dbf9660adec1a62774e9a828a045ed075a962d559d565d1f0561423a43",
       "scheduled": true
     },
     {
@@ -6921,7 +6948,7 @@
     {
       "id": "sign-line-concurrency-capacity",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "结合 BI 与开发者平台数据估算听障产品线各产品的语音并发路数（普通话/方言下的 vivo 听说、通话无障碍、微信无障碍、手语翻译官），弄清并发的计算共识、平均并发与峰值并发差异，以及模型参数量与并发能力的关系（研发据此评估当前并发能否支撑各产品）",
+      "summary": "结合 BI 与开发者平台数据估算听障产品线各产品的语音并发路数（普通话/方言下的 vivo 听说、通话无障碍、微信无障碍、手语翻译官），弄清并发的计算共识、平均并发与峰值并发差异，以及模型参数量与并发能力的关系；统计声音记忆最近 1 个月/4 个月的 ASR 调用量总和、手语翻译官单月 ASR 时长总和，预估 AI 手语陪练调用豆包 API 的月费用，按模板整理手语翻译官与 vivo 听说区分说话人功能的预算，并把年度总量按 Q1–Q4 缓慢增长拆分",
       "message_refs": [
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvggdh2b_54b769eb-cec2-4fca-aedf-30169192fc44\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvggu872_b4f4cbe9-c5f1-43c6-b98a-278dbdde0233\"]",
@@ -6931,9 +6958,14 @@
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgisnxv_34f72605-e8f9-40d5-b607-299970c64e47\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgj0yny_a338e0a3-85a4-4b32-91c9-4586a24e772a\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgmoppx_3fe45d77-77cb-457e-8a33-2f28d83cc8a8\"]",
-        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgmyshd_fa3e3c09-6707-4733-a715-994edac9bd44\"]"
+        "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvgmyshd_fa3e3c09-6707-4733-a715-994edac9bd44\"]",
+        "[\"zcode\",\"session_6da9a14d6465add477866ef3aa07db93\",\"msg_mwapmnv5_fe49ee66-6b52-4440-a303-be985e802cfa\"]",
+        "[\"zcode\",\"session_6da9a14d6465add477866ef3aa07db93\",\"msg_mwaqq3mk_7c6bf20f-2e69-4421-87a9-31b16ce2c903\"]",
+        "[\"zcode\",\"session_529a50f1ae332b26347c683210d49f1d\",\"msg_mwapn0d9_5a74479d-b96e-43a4-8664-6845be5ae938\"]",
+        "[\"zcode\",\"session_529a50f1ae332b26347c683210d49f1d\",\"msg_mwaptwpj_35b83793-4b91-4b39-ba42-dc81f106d94a\"]",
+        "[\"zcode\",\"session_bbdcfd6599e52a54f5cd5bf407030368\",\"msg_mwaqvup1_526f379d-731a-49c4-ac70-65beb3fb8c2d\"]"
       ],
-      "evidence_sha256": "e01f5c031fdd3c47f30bf1c59d6175f6a381d5085da3a673730d51d50cb3f9b6"
+      "evidence_sha256": "217d104e40ac4375d4f472992b970d0ceea41f097ffb7ec5121795870dbc877c"
     },
     {
       "id": "hearing-survey-design",
@@ -7666,7 +7698,7 @@
     {
       "id": "watch-sound-survey-design",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "延续听力问卷，为 vivo 手表的声音识别与语音转文字功能设计调研问卷：环境音辨别能力矩阵题（8 种声音可听到/可辨别）、在用手表品牌与助听设备情况，结论须覆盖使用价值、使用场景、使用意愿与购买意愿，场景题突出“手机不行、必须手表”的不可替代场景，语音转文字部分前移；用腾讯问卷 Skill 做成在线问卷，并讨论是否与耳机问卷合并发放（担心用户理解成本）；回收答卷后继续优化选项覆盖面：手表识别声音的时机、使用语音转文字的场景等选项重设更全面",
+      "summary": "延续听力问卷，为 vivo 手表的声音识别与语音转文字功能设计调研问卷：环境音辨别能力矩阵题（8 种声音可听到/可辨别）、在用手表品牌与助听设备情况，结论须覆盖使用价值、使用场景、使用意愿与购买意愿，场景题突出“手机不行、必须手表”的不可替代场景；用腾讯问卷 Skill 做成在线问卷，讨论是否与耳机问卷合并发放；回收后优化选项覆盖面。结果分析：总结问卷数据，把 4 个功能的使用价值/意愿/场景统计成可视化分析报告（md），参考既有听障满意度调研报告的结构做多维交叉分析与图表呈现",
       "message_refs": [
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupdc80_e255d29b-5bef-49be-890f-0929bff6ee18\"]",
         "[\"zcode\",\"session_da1a9f30bf100d0c043e5d76dc5eef9e\",\"msg_mvupecy5_5b9964d9-2cb8-4673-9ca3-0a735584cdaa\"]",
@@ -7687,9 +7719,12 @@
         "[\"zcode\",\"session_85fd964df533beb877e23a8e70b9bb39\",\"msg_mvyx4ltt_43d20323-e69c-4df6-945f-fa106951258a\"]",
         "[\"zcode\",\"session_bb43cd7ae8c8c14773641baa830af51d\",\"msg_mw01k4kq_67fbf8c0-86ef-42d8-aa0b-688b32a3d755\"]",
         "[\"zcode\",\"session_bb43cd7ae8c8c14773641baa830af51d\",\"msg_mw01o7yo_d9b0902c-a473-4a2d-ad02-96953403fea8\"]",
-        "[\"zcode\",\"session_bb43cd7ae8c8c14773641baa830af51d\",\"msg_mw01u8a2_4c27051c-ae1b-448a-bc66-56e725aca010\"]"
+        "[\"zcode\",\"session_bb43cd7ae8c8c14773641baa830af51d\",\"msg_mw01u8a2_4c27051c-ae1b-448a-bc66-56e725aca010\"]",
+        "[\"zcode\",\"session_d321c813ba3d679cc692f5b4b8f55873\",\"msg_mw1pus7p_457ddd86-e1a8-4c39-a865-791580041b87\"]",
+        "[\"zcode\",\"session_d321c813ba3d679cc692f5b4b8f55873\",\"msg_mw1q7tlc_2bb73aaa-6b76-48c6-82b6-60b3ccf36a68\"]",
+        "[\"zcode\",\"session_d321c813ba3d679cc692f5b4b8f55873\",\"msg_mw1rdikp_49942596-b395-40d4-82bc-3e3bc983289e\"]"
       ],
-      "evidence_sha256": "cf8728f5855f4b6d518ce369cf00ee5145ce6bade00ebef77bc283d58d79ad82"
+      "evidence_sha256": "506e7d3b6e7456ecabce2d5a65a76407d36501a6e11493d25400ebad02b6537a"
     },
     {
       "id": "daily-top5-hotspots",
@@ -7708,6 +7743,21 @@
         "[\"zcode\",\"session_582ac5b3bc75b2fcd0b2f1a9bad06348\",\"msg_mw02vwx3_3d1e8938-4745-4dd9-8647-b07005afc5ee\"]"
       ],
       "evidence_sha256": "1cc0b2492c830fa85fe644511816dc7e8a55180bd57fa1924f7e92e8ecf8df25"
+    },
+    {
+      "id": "sign-app-experience-survey",
+      "project_id": "p-sign-translator-v2",
+      "summary": "设计手语翻译官 App 使用体验与用户认知调研问卷：覆盖各功能的使用场景、频率、问题与满意度，以结果为导向确保结论有价值、有说服力；补充手语水平题、与听障人群相关的身份选项（手语爱好者、听障人士的同事、服务听障人士的团队/企业/政务等）、了解渠道与“从未了解过”选项，子功能问题按“app 内【XX】功能”模板并细化使用情况分级，定稿后用 computer use 配置上线",
+      "message_refs": [
+        "[\"zcode\",\"session_a3c8ed66366610791b1b24d7042e7e3d\",\"msg_mw92bvj7_8c83a3ca-79d6-413f-931b-d9091ce19b5e\"]",
+        "[\"zcode\",\"session_a3c8ed66366610791b1b24d7042e7e3d\",\"msg_mw92f4ld_ff9409a3-4bda-4a7b-b5d9-d36af362d66f\"]",
+        "[\"zcode\",\"session_a3c8ed66366610791b1b24d7042e7e3d\",\"msg_mw93gpkz_375d4ed5-4aae-44b6-a3f3-ea4e872c9814\"]",
+        "[\"zcode\",\"session_a3c8ed66366610791b1b24d7042e7e3d\",\"msg_mw947bsg_f5c430d9-66a9-430c-8257-5eed22247907\"]",
+        "[\"zcode\",\"session_a3c8ed66366610791b1b24d7042e7e3d\",\"msg_mw9583r2_a5b243e7-cdb2-4aa1-a6be-b8273fe4d6b2\"]",
+        "[\"zcode\",\"session_5ee5afb5afa48ebc9e8110ae4d6147ce\",\"msg_mwadwiaa_c08da76d-80d6-4552-bfc3-e5ab9a8a8957\"]",
+        "[\"zcode\",\"session_5ee5afb5afa48ebc9e8110ae4d6147ce\",\"msg_mwagaflg_9c341d76-68b6-40f8-9613-585c75208c75\"]"
+      ],
+      "evidence_sha256": "2587db9c927e196af28931ffd6c75a2adaa829f5a6c828406e91537a1df57007"
     }
   ],
   "excluded_task_ids": [
