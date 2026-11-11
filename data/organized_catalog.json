@@ -7758,6 +7758,41 @@
         "[\"zcode\",\"session_5ee5afb5afa48ebc9e8110ae4d6147ce\",\"msg_mwagaflg_9c341d76-68b6-40f8-9613-585c75208c75\"]"
       ],
       "evidence_sha256": "2587db9c927e196af28931ffd6c75a2adaa829f5a6c828406e91537a1df57007"
+    },
+    {
+      "id": "req-zc-ecig-market",
+      "project_id": "p-6128bb64fe25",
+      "summary": "调研电子烟行业：核心零部件构成、国内竞争格局与销售规模",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_90c76764-0f74-4fbf-b336-261cddf26c51",
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "task_id": "zcode:sess_adba3b6a-bae3-4cc6-a5b8-3d8b3fa0eb98",
+          "indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "task_id": "zcode:sess_2d2ecca5-0547-48de-ad0c-4f09bd880a20",
+          "indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
     }
   ],
   "excluded_task_ids": [
