@@ -10,7 +10,7 @@ const MAX_TEXT=24000;
 function clean(html){
   const title=(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)||[])[1]||"Untitled";
   const text=html.replace(/<!--[\s\S]*?-->/g," ").replace(/<(script|style|nav|footer|header|aside|svg|form)\b[^>]*>[\s\S]*?<\/\1>/gi," ").replace(/<\/(p|div|h[1-6]|li|article|section|br)>/gi,"\n").replace(/<[^>]+>/g," ").replace(/&nbsp;|&#160;/gi," ").replace(/&amp;/gi,"&").replace(/&lt;/gi,"<").replace(/&gt;/gi,">").replace(/[ \t]+/g," ").replace(/\n\s*\n+/g,"\n\n").trim();
-  return {title:title.replace(/<[^>]+>/g,"").trim(),text:text.slice(0,MAX_TEXT)};
+  return {title:title.replace(/<[^>]+>/g,"").trim(),text:text.slice(0,MAX_TEXT),truncated:text.length>MAX_TEXT};
 }
 function safeUrl(raw){
   const u=new URL(raw);
