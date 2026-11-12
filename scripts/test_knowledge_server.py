@@ -21,6 +21,13 @@ class LocalApiTests(unittest.TestCase):
         with patch.object(server,'get_article',return_value=article),patch.object(server,'analyze',return_value={'markdown':'整理结果','usage':{}}):
             status,out=self.request(self.origin,{'url':'https://example.com','apiKey':'sk-example'})
         self.assertEqual(status,200); self.assertEqual(out['analysis']['markdown'],'整理结果'); self.assertTrue(out['truncated'])
+    def test_review_uses_existing_and_new_content(self):
+        with patch.object(server,'analyze',return_value={'markdown':'合并稿'}) as ai:
+            conn=http.client.HTTPConnection('127.0.0.1',self.httpd.server_port,timeout=3)
+            conn.request('POST','/api/review',json.dumps({'apiKey':'sk-example','existing':'旧文档','incoming':'新资料'}),{'Origin':self.origin,'Content-Type':'application/json'})
+            response=conn.getresponse(); out=json.loads(response.read()); conn.close()
+        self.assertEqual(response.status,200); self.assertEqual(out['analysis']['markdown'],'合并稿')
+        self.assertTrue(ai.call_args.kwargs['review']); self.assertIn('旧文档',ai.call_args.args[1]['text'])
     def test_cross_origin_cannot_call_api(self):
         status,out=self.request('https://evil.example',{'url':'https://example.com','apiKey':'sk-example'})
         self.assertEqual(status,403); self.assertFalse(out['ok'])
