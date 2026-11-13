@@ -1,9 +1,13 @@
 {
   "vault_path": "",
   "include": [
-    "TaskArchive公开/**/*.md",
-    "TaskArchive公开/*.md"
+    "TaskArchive公开/*.md",
+    "TaskArchive公开/**/*.md"
   ],
-  "approved_paths": [],
+  "approved_hashes": {},
+  "extra_exclude_patterns": [
+    "(?:公司|部门|团队|主管|领导|同事).{0,15}(?:任务|待办|安排|会议|进度)",
+    "(?:项目|产品).{0,20}(?:内部|未发布|商业秘密)"
+  ],
   "category": "知识与原理"
 }

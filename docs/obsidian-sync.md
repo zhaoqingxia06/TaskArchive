@@ -3,12 +3,22 @@
 ## 原理
 Obsidian 文件只存在于你的电脑上，GitHub Actions 无法直接访问。本地程序扫描指定目录，生成审核清单；只有加入 `approved_paths` 的 Markdown 才能发布到公开 GitHub 仓库 `data/knowledge.json`。不会自动删除线上文档，也不会修改 Obsidian 原文件。
 
-## 初始化
-1. 克隆仓库或拉取最新版本：`git pull --ff-only origin main`。
-2. 编辑根目录 `obsidian-sync.json`，把 `vault_path` 改为你的 Obsidian Vault **绝对路径**。默认仅扫描 `TaskArchive公开/` 下的 Markdown；把准备公开的笔记复制或移动到这个文件夹。不要把 Vault 全盘设为公开。
-3. 首次预览：`python3 scripts/sync_obsidian.py`。查看本机生成的 `.obsidian-sync-review.json`，其中含正文，**不要提交到 GitHub**。
-4. 审核后把允许公开的相对路径写入 `approved_paths`，例如 `TaskArchive公开/产品方法论/用户洞察.md`。
-5. 运行 `python3 scripts/sync_obsidian.py --publish --push`。需要电脑本机已配置 GitHub Git 推送权限，GitHub Actions 随后构建网站。
+## 隐私与筛选规则（2026-11-13 更新）
+
+- Vault 为 `D:\\obidian\\Tsing`。**不扫描整个 Vault**，只扫描 `TaskArchive公开/` 文件夹。
+- 任何文件名、路径或正文出现 vivo、维沃、日记、待办、会议纪要、工作日志、保密、内部资料、凭据等规则，直接拦截；支持自定义排除正则。
+- **即使已经批准过，内容一旦变化，原批准自动失效。** 审核时复制清单中该文件的 `hash` 到 `approved_hashes`，再次执行才可发布。
+- 过滤器无法识别所有公司信息和私人信息；审核仍然必需。不要将敏感笔记放进公开候选文件夹。
+- 同步只发布被明确批准的文件，不会读取、上传或修改 Vault 其他内容，也不自动删除线上文件。
+
+## 初始化（Windows）
+
+1. 本地 `git pull --ff-only origin main` 获取程序。
+2. 在 `D:\\obidian\\Tsing` 新建 `TaskArchive公开` 文件夹，只放已脱敏的长期知识笔记。
+3. 在 PowerShell 设置本次终端环境变量：`$env:OBSIDIAN_VAULT_PATH='D:\\obidian\\Tsing'`。也可在本机配置 `vault_path`，但不要把本机绝对路径提交到公开仓库。
+4. 在 TaskArchive 仓库运行 `python scripts/sync_obsidian.py`，打开本地 `.obsidian-sync-review.json` 检查正文及排除结果。
+5. 只把同意公开的 `path` 和对应 `hash` 逐一填入 `obsidian-sync.json` 的 `approved_hashes`；内容变化需重新审核。
+6. 运行 `python scripts/sync_obsidian.py --publish --push`，需要本机 GitHub 推送权限。网站随后通过 GitHub Actions 更新。
 
 ## 每日定时（macOS）
 在终端运行：
@@ -19,7 +29,8 @@ chmod +x scripts/install_obsidian_schedule.sh
 默认每天 09:00（电脑本地时间）执行。macOS 的 launchd 任务需要电脑开机并允许执行；睡眠期间不会保证准点运行。安装脚本生成的定时任务默认执行**预览**，不会未经审核自动公开笔记。审核并确认同步范围后，可在生成的 LaunchAgent plist 中把脚本参数改为 `--publish --push`。
 
 ## 每日定时（Windows）
-使用“任务计划程序”创建每日 09:00 任务，程序为 `python`，参数为 `scripts/sync_obsidian.py`，起始目录为 TaskArchive 仓库根目录。自动发布需要追加 `--publish --push`，并事先配置 Git 推送权限。
+
+运行 `powershell -ExecutionPolicy Bypass -File scripts/install_obsidian_windows.ps1`，会在当前 Windows 账户下创建每天 09:00 的**本地预览任务**。程序不会自动发布未审核笔记。需电脑开机、Vault 可访问。
 
 ## 当前边界
 - 支持新增/修改检测、稳定文档 ID、已有文档保留、公开路径白名单、GitHub 发布。

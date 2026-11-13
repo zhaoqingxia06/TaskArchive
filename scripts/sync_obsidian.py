@@ -38,8 +38,30 @@ def title_of(text, path):
     m = re.search(r"(?m)^#\s+(.+)$", text)
     return m.group(1).strip() if m else path.stem
 
-def scan(vault, included):
+# Fail closed: these rules are checked against path AND entire text.
+# Keyword screening is a safety net, not a guarantee that content is public.
+BLOCKED = [
+    r"vivo", r"维沃", r"九号(?:公司|项目|产品|电动|e-bike)",
+    r"(^|[/\\])(?:日记|日报|周报|待办|todo|tasks?|daily|journal|diary|会议纪要|工作记录|工作日志)([/\\]|$)",
+    r"(?m)^\s*[-*]\s*\[[ xX]\]", r"(?im)\b(?:todo|to-do|action items?)\s*[:：]",
+    r"(?m)^\s*(?:今日|明日|本周|下周)(?:待办|任务|工作计划|工作安排)\s*[:：]",
+    r"(?i)\b(?:confidential|internal only|nda)\b",
+    r"保密|机密|内部资料|客户名单|客户信息|薪资|工资条|绩效考核",
+    r"(?i)\b(?:sk-[A-Za-z0-9_-]{16,}|gh[pousr]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,})\b",
+]
+def blocked_reason(path, content, extra):
+    haystack = path + "\n" + content
+    for pattern in BLOCKED + list(extra):
+        try:
+            if re.search(pattern, haystack, flags=re.I):
+                return "命中禁止公开规则"
+        except re.error:
+            return "排除规则无效，默认拒绝"
+    return None
+
+def scan(vault, included, extra):
     entries = {}
+    excluded = []
     for pattern in included:
         for path in vault.glob(pattern):
             if not path.is_file() or path.suffix.lower() != ".md":
@@ -51,6 +73,10 @@ def scan(vault, included):
             cleaned = clean_md(raw)
             if not cleaned:
                 continue
+            reason = blocked_reason(rel, raw, extra)
+            if reason:
+                excluded.append({"path": rel, "reason": reason})
+                continue
             entries[rel] = {
                 "id": "obsidian-" + sha(rel)[:20],
                 "path": rel,
@@ -58,7 +84,7 @@ def scan(vault, included):
                 "title": title_of(cleaned, path),
                 "body": cleaned,
             }
-    return entries
+    return entries, excluded
 
 def main():
     p = argparse.ArgumentParser()
@@ -76,30 +102,37 @@ def main():
     included = cfg.get("include", ["TaskArchive公开/**/*.md"])
     if not included:
         sys.exit("include 为空；默认拒绝扫描整个知识库")
-    entries = scan(vault, included)
+    entries, excluded = scan(vault, included, cfg.get("extra_exclude_patterns", []))
     previous = load(STATE, {})
     old_hashes = previous.get("hashes", {})
     changed = [v for k, v in entries.items() if old_hashes.get(k) != v["hash"]]
     removed = sorted(set(old_hashes) - set(entries))
     now = dt.datetime.now(dt.timezone.utc).isoformat()
-    queue = {"generated_at": now, "vault": str(vault), "changed": changed, "missing_or_removed": removed,
+    queue = {"generated_at": now, "vault": str(vault), "changed": changed, "missing_or_removed": removed, "excluded": excluded,
              "notice": "待审核内容仅保存在本机；文件移除不会自动删除线上知识"}
     write(QUEUE, queue)
-    print(f"扫描 {len(entries)} 篇；待审核新增或修改 {len(changed)} 篇；不再匹配 {len(removed)} 篇。")
+    print(f"候选 {len(entries)} 篇；拦截 {len(excluded)} 篇；待审核新增或修改 {len(changed)} 篇；不再匹配 {len(removed)} 篇。")
     print(f"审核清单：{QUEUE}")
     if not args.publish:
         print("预览模式：没有修改 GitHub 或网站。")
         return
-    approved = set(cfg.get("approved_paths", []))
+    approved = cfg.get("approved_hashes", {})
+    if not isinstance(approved, dict):
+        sys.exit("approved_hashes 必须为路径到 SHA256 的映射")
     if not approved:
         sys.exit("没有已审核的 approved_paths；未发布任何文件")
-    approved_changed = [e for e in changed if e["path"] in approved]
+    approved_changed = [e for e in changed if approved.get(e["path"]) == e["hash"]]
+    unapproved = [e["path"] for e in changed if e["path"] in approved and approved.get(e["path"]) != e["hash"]]
+    if unapproved:
+        print("内容已变化，需要重新审核批准：", "、".join(unapproved))
     if not approved_changed:
         print("没有已批准且发生变化的文件，跳过发布。")
         return
     if args.push:
-        if git("status", "--porcelain"):
-            sys.exit("工作区有未提交改动；为防止混入其他文件，本次不推送")
+        dirty = git("status", "--porcelain")
+        unsafe = [line for line in dirty.splitlines() if not line.endswith(" data/knowledge.json")]
+        if unsafe:
+            sys.exit("工作区存在其他未提交改动；本次不推送")
         git("pull", "--ff-only", "origin", "main")
     data = load(DB, {})
     if data.get("version") != 1 or not isinstance(data.get("items"), list):
@@ -107,6 +140,10 @@ def main():
     by_id = {x["id"]: i for i, x in enumerate(data["items"])}
     processed = {}
     for entry in approved_changed:
+        # Recheck before writing, including previously approved files.
+        if blocked_reason(entry["path"], entry["body"], cfg.get("extra_exclude_patterns", [])):
+            print("禁止发布：", entry["path"])
+            continue
         existing = data["items"][by_id[entry["id"]]] if entry["id"] in by_id else None
         if existing and existing.get("source_hash") == entry["hash"]:
             processed[entry["path"]] = entry["hash"]
