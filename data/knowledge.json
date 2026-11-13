@@ -67,7 +67,6 @@
         "https://www.asha.org/practice-portal/clinical-topics/hearing-loss",
         "https://www.who.int/news-room/questions-and-answers/item/deafness-and-hearing-loss-hearing-checks-and-the-hearwho-app",
         "https://www.asha.org/policy/GL2005-00014",
-        "https://www.asha.org/policy/GL2005-00014/",
         "https://www.asha.org/policy/PP2006-00274/"
       ]
     },
@@ -373,7 +372,7 @@
         "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
         "https://www.gov.uk/service-manual/user-research/analyse-a-research-session"
       ],
-      "pending": "资料和案例会随公开证据变化；产品方宣传与独立验证分开判断。",
+      "pending": "",
       "source": "依据 GOV.UK Service Manual 用户研究指南整编；流程为原创方法示意。",
       "aliases": "用户调研,访谈,观察,研究方法",
       "createdAt": "2026-11-11T14:52:01.169Z",
@@ -423,7 +422,7 @@
         "https://www.pewresearch.org/u-s-survey-methodology/",
         "https://www.pewresearch.org/short-reads/2018/10/18/defining-the-universe-is-essential-when-writing-about-survey-data/"
       ],
-      "pending": "资料和案例会随公开证据变化；产品方宣传与独立验证分开判断。",
+      "pending": "",
       "source": "依据 Pew Research Center 的问卷写作与调查方法资料整编；流程为原创方法示意。",
       "aliases": "问卷设计,统计,交叉分析,样本,分母",
       "createdAt": "2026-11-11T14:52:01.169Z",
