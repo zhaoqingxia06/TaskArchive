@@ -6,7 +6,7 @@ const REPO='zhaoqingxia06/TaskArchive',FILE='data/knowledge.json',LEGACY='taskar
 const defaults=['AI Agent','声音与听力','产品方法论','互联网与软件技术'];
 const fields=['category','topic','title','summary','body','pending','source','aliases'];
 const $=id=>document.getElementById(id);
-let shared=[],selected=new URLSearchParams(location.hash.replace(/^#/,'')).get('doc')||null,editing=null,editingText='',credential='',loading=false,loadError='',legacy=[];
+let shared=[],selected=new URLSearchParams(location.hash.replace(/^#/,'')).get('doc')||null,editing=null,editingText='',credential='',loading=false,loadError='',legacy=[],dataLoaded=false;
 const opened=new Set();$('homeLink').onclick=()=>{selected=null;history.replaceState(null,'',location.pathname);render()};
 function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n}
 function renderBody(wrap,input){const lines=String(input||'').split(/\r?\n/);let i=0;const cells=l=>l.trim().replace(/^\||\|$/g,'').split('|').map(x=>x.trim());while(i<lines.length){let line=lines[i].trim();if(!line){i++;continue}let m=line.match(/^!\[([^\]]*)\]\(([^)]+)\)\s*$/);if(m){let url=m[2],allowed=/^\.\/assets\/knowledge-figures\/[a-z0-9_-]+\.svg$/i.test(url)||/^https:\/\//i.test(url)||/^data:image\/(?:png|jpeg|webp|gif);base64,[a-z0-9+/=]+$/i.test(url);if(allowed){let fig=node('figure'),img=node('img');img.src=url;img.alt=m[1]||'知识配图';img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>{const note=node('p','图片暂时无法显示：'+img.alt,'note');img.replaceWith(note)};fig.append(img);if(m[1])fig.append(node('figcaption',m[1]));wrap.append(fig)}else wrap.append(node('p','图片地址不可用：'+(m[1]||'知识配图'),'note'));i++;continue}if(line.includes('|')&&i+1<lines.length&&/^\s*\|?\s*:?-{3,}/.test(lines[i+1])){let box=node('div',undefined,'table-wrap'),table=node('table'),head=node('tr');cells(line).forEach(t=>head.append(node('th',t)));table.append(head);i+=2;while(i<lines.length&&lines[i].trim().includes('|')){let tr=node('tr');cells(lines[i]).forEach(t=>tr.append(node('td',t)));table.append(tr);i++}box.append(table);wrap.append(box);continue}m=line.match(/^(#{1,4})\s+(.+)$/);if(m){wrap.append(node(m[1].length<=2?'h2':'h3',m[2]));i++;continue}wrap.append(node('p',line));i++}}
@@ -19,7 +19,7 @@ function bodyText(x){return Array.isArray(x.sections)&&x.sections.length?x.secti
 function render(){
 const items=all(),q=$('search').value.trim().toLowerCase();
 const found=items.filter(x=>fields.some(k=>String(x[k]||'').toLowerCase().includes(q))||JSON.stringify(x.sections||[]).toLowerCase().includes(q));
-if(selected&&!items.some(x=>x.id===selected))selected=null;
+if(dataLoaded&&selected&&!items.some(x=>x.id===selected))selected=null;
 const tree=$('tree');tree.replaceChildren();
 if(!found.length)tree.append(node('p',items.length?'没有找到相关文档':'还没有文档','empty'));
 const grouped=new Map();
@@ -83,7 +83,7 @@ const ok=await saveItems(data=>{let seen=new Set(data.items.map(x=>x.id)),added=
 if(ok){try{localStorage.removeItem(LEGACY)}catch(e){}legacy=[];box.replaceChildren(node('p','旧文档已提交到 GitHub，浏览器本地旧副本已清除。'));populate()}
 }
 }
-async function init(){populate();legacyMigrator();render();try{const r=await fetch('./knowledge.json',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const data=await r.json();if(data.version!==1||!Array.isArray(data.items))throw Error('数据格式错误');shared=data.items;populate();render();inform('已连接 GitHub 发布的知识库 · '+shared.length+' 篇文档')}catch(e){loadError='知识库读取失败，请刷新网页重试。';inform(loadError,true);render()}}
-window.addEventListener('hashchange',()=>{let id=new URLSearchParams(location.hash.replace(/^#/,'')).get('doc');if(id){selected=id;render()}});
+async function init(){populate();legacyMigrator();render();try{const r=await fetch('./knowledge.json',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const data=await r.json();if(data.version!==1||!Array.isArray(data.items))throw Error('数据格式错误');shared=data.items;dataLoaded=true;populate();render();inform('已连接 GitHub 发布的知识库 · '+shared.length+' 篇文档')}catch(e){loadError='知识库读取失败，请刷新网页重试。';inform(loadError,true);render()}}
+window.addEventListener('hashchange',()=>{let id=new URLSearchParams(location.hash.replace(/^#/,'')).get('doc');selected=id||null;render()});
 init();
 })();</script></body></html>

@@ -39,7 +39,7 @@ def main():
                         fail(ident + ": 图片缺少替代文本")
                     if not (ROOT / src.removeprefix("./")).is_file():
                         fail(ident + ": 图片不存在 " + src)
-        for field in ("title", "summary", "body", "source"):
+        for field in ("title", "summary", "body", "source", "pending", "topic", "sections"):
             value = item.get(field, "")
             if PRIVATE.search(str(value)):
                 fail(ident + ": 可能含内部或私人内容 " + field)
