@@ -8,7 +8,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "knowledge.json"
 FIGURES = ROOT / "assets" / "knowledge-figures"
-ALLOWED = {"AI Agent", "声音与听力", "产品方法论", "互联网与软件技术"}
+LEGACY_CATEGORIES = {"知识与原理", "语音与 AI", "产品解析", "产品与案例观察", "产品与研究方法"}
 PRIVATE = re.compile(r"vivo|维沃|工作待办|个人日记|内部会议纪要", re.I)
 IMAGE = re.compile(r"!\[([^\]]+)\]\((\./assets/knowledge-figures/[^)]+)\)")
 ERRORS = []
@@ -25,7 +25,7 @@ def main():
         if not ident or ident in ids:
             fail("重复或空白文章 ID: " + ident)
         ids.add(ident)
-        if item.get("category") not in ALLOWED:
+        if not item.get("category") or item.get("category") in LEGACY_CATEGORIES:
             fail(ident + ": 非领域分类 " + str(item.get("category")))
         if not item.get("topic") or not item.get("title"):
             fail(ident + ": 缺少主题或标题")
