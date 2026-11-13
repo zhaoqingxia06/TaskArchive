@@ -38,3 +38,22 @@ chmod +x scripts/install_obsidian_schedule.sh
 - 原始 Markdown 中的图片、Obsidian 内链、附件不会自动上传；可能无法在网页中正常显示。
 - `obsidian-sync.json` 不应存放真实本机路径后提交给他人；建议使用环境变量 `OBSIDIAN_VAULT_PATH`，并在本地保持配置文件未提交。
 - 自动化运行依赖本机开机、可访问 GitHub、Git 凭据可用。
+
+## 第二阶段：知识级筛选与合并候选（本地离线）
+
+每日扫描现在还会自动运行 `scripts/obsidian_knowledge_review.py`：
+
+1. 只处理 `TaskArchive公开/` 中的 Markdown，不扫描日记、待办文件夹。
+2. 再次检查敏感关键词、待办标记、知识内容长度与方法论/原理等主题信号；可疑内容不进入可发布候选。
+3. 读取 GitHub 仓库本地副本 `data/knowledge.json`，用文本特征相似度列出最多三个可能的已有文章；提示“考虑合并”或“考虑新建”。
+4. 结果写入**本地** `.obsidian-knowledge-proposals.json`，包含候选正文和关联文档。审核后再决定是否人工整理到现有文章。
+5. **不会自动将未整理的 Obsidian 原文上传**；语义匹配仍需人工或受控 AI 复核，不能将词面相似度冒充 AI 理解。
+
+Windows 首次使用：
+```powershell
+cd 你的TaskArchive仓库目录
+git pull --ff-only origin main
+python scripts/sync_obsidian.py --vault 'D:\obidian\Tsing'
+```
+
+**隐私边界**：所有预览与候选文件都仅保存在本机，禁止提交 GitHub。已知的工作和私人词汇只是最低限度拦截，不构成泄露防护保证。公开网站只允许用户明确审核过的最终知识稿。

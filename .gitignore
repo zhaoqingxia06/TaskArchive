@@ -6,3 +6,5 @@ __pycache__/
 # Local Obsidian sync preview, state, and credentials
 .obsidian-sync-review.json
 .obsidian-sync-state.json
+
+.obsidian-knowledge-proposals.json

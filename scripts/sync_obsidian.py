@@ -113,6 +113,10 @@ def main():
     write(QUEUE, queue)
     print(f"候选 {len(entries)} 篇；拦截 {len(excluded)} 篇；待审核新增或修改 {len(changed)} 篇；不再匹配 {len(removed)} 篇。")
     print(f"审核清单：{QUEUE}")
+    # Generate local knowledge review suggestions without sending Vault content to a service.
+    review = ROOT / "scripts/obsidian_knowledge_review.py"
+    if review.exists():
+        subprocess.run([sys.executable, str(review)], cwd=ROOT, check=True)
     if not args.publish:
         print("预览模式：没有修改 GitHub 或网站。")
         return
