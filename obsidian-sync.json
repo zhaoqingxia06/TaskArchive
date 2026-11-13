@@ -1,0 +1,9 @@
+{
+  "vault_path": "",
+  "include": [
+    "TaskArchive公开/**/*.md",
+    "TaskArchive公开/*.md"
+  ],
+  "approved_paths": [],
+  "category": "知识与原理"
+}
