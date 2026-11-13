@@ -23,6 +23,8 @@ jobs:
       - uses: actions/checkout@v6
       - name: Validate contributor behavior
         run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Validate public knowledge taxonomy and figures
+        run: python3 scripts/validate_knowledge.py
       - name: Build and validate archive
         run: python3 scripts/build.py
       - name: Configure Pages
