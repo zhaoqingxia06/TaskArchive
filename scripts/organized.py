@@ -80,8 +80,6 @@ def build_organized(root, tasks, legacy_html, previous_data=None):
         (root/'index.html').write_text(page)
         (dist/'index.html').write_text(page)
         (dist/'knowledge.html').write_text((root/'assets/knowledge.html').read_text(encoding='utf-8'), encoding='utf-8')
-        (dist/'materials.html').write_text((root/'assets/materials.html').read_text(encoding='utf-8'), encoding='utf-8')
-        (dist/'materials-ai.js').write_text((root/'assets/materials-ai.js').read_text(encoding='utf-8'), encoding='utf-8')
         if (root/'assets/knowledge-figures').is_dir():
             shutil.copytree(root/'assets/knowledge-figures', dist/'assets/knowledge-figures', dirs_exist_ok=True)
         a.write(dist/'knowledge.json', a.read(root/'data/knowledge.json'))
