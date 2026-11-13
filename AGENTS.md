@@ -11,3 +11,5 @@
 - For legacy task titles, summarize all relevant user messages. Update reviewed summaries in `data/curation.json` when source messages change; never use just the first message as the display title.
 - Run `python3 scripts/build.py` and the repository tests before pushing. Commit generated root `index.html` only if it changes. Never hand-edit generated output or replace the unified entry with a platform-only page.
 - Never commit credentials, authentication exports or local databases.
+
+- When organizing knowledge (including image or document interpretation), read `KNOWLEDGE_RULES.md` and respect its image and privacy requirements.
