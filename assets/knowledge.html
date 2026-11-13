@@ -17,6 +17,12 @@ function all(){return shared.map(normalize)}
 function date(s){let d=new Date(s);return Number.isNaN(d.getTime())?'时间未知':d.toLocaleDateString('zh-CN')}
 function inform(msg,isError=false){$('repoStatus').textContent=msg;$('error').textContent=isError?msg:''}
 function bodyText(x){return Array.isArray(x.sections)&&x.sections.length?x.sections.map(s=>'## '+s.title+'\n'+(s.paragraphs||[]).join('\n\n')).join('\n\n'):String(x.body||'')}
+function parseSections(text){
+const lines=String(text).replace(/\r\n?/g,'\n').split('\n'),sections=[];let section=null,paragraph=[];
+function flush(){let value=paragraph.join('\n').trim();if(value&&section)section.paragraphs.push(value);paragraph=[]}
+for(const line of lines){let heading=line.match(/^##\s+(.+?)\s*$/);if(heading){flush();section={title:heading[1],paragraphs:[]};sections.push(section)}else if(!section){if(line.trim())return null}else if(!line.trim()){flush()}else paragraph.push(line)}flush();
+return sections.length&&sections.every(s=>s.title&&s.paragraphs.length)?sections:null
+}
 function render(){
 const items=all(),q=$('search').value.trim().toLowerCase();
 const found=items.filter(x=>fields.some(k=>String(x[k]||'').toLowerCase().includes(q))||JSON.stringify(x.sections||[]).toLowerCase().includes(q));
@@ -64,11 +70,11 @@ $('form').onsubmit=async event=>{
 event.preventDefault();const now=new Date().toISOString(),x={...(editing||{}),id:editing?.id||crypto.randomUUID(),createdAt:editing?.createdAt||now,updatedAt:now};
 fields.forEach(key=>x[key]=$(key).value.trim());
 if(!x.topic||!x.title||!x.summary){$('formError').textContent='请填写主题、标题与核心结论。';return}
-if(editing&&x.body===editingText&&Array.isArray(editing.sections))x.sections=editing.sections;else delete x.sections;
+if(editing&&x.body===editingText&&Array.isArray(editing.sections))x.sections=editing.sections;else {let sections=parseSections(x.body);if(sections)x.sections=sections;else delete x.sections;}
 const btn=$('form').querySelector('button[type=submit]');btn.disabled=true;btn.textContent='正在保存…';
 const ok=await saveItems(data=>{
 let index=data.items.findIndex(v=>v.id===x.id);
-if(index>=0){let live=data.items[index];if(editing&&live.updatedAt!==editing.updatedAt&&!confirm('这篇文章在你打开页面后已被其他设备修改。确定要覆盖最新版本吗？'))return null;data.items[index]={...live,...x}}
+if(index>=0){let live=data.items[index];if(editing&&live.updatedAt!==editing.updatedAt&&!confirm('这篇文章在你打开页面后已被其他设备修改。确定要覆盖最新版本吗？'))return null;data.items[index]={...live,...x};if(!x.sections)delete data.items[index].sections}
 else data.items.push(x);return data
 },'knowledge: '+(editing?'update ':'create ')+x.title);
 btn.disabled=false;btn.textContent='保存';
