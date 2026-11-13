@@ -520,65 +520,53 @@
       "category": "互联网与软件技术",
       "topic": "Web 基础",
       "title": "URL、网页元数据与信息提取",
-      "summary": "URL 本身、访问网页后取得的数据、以及 AI 的分析结论是三个不同层次；只有第一层能在不访问网页时直接确定。",
+      "summary": "仅凭 URL 可解析地址结构；页面标题、作者和正文需要访问资源，摘要与判断还需要内容分析。",
       "body": "",
       "sections": [
         {
-          "title": "先分清三个信息层次",
+          "title": "三个层次：地址、网页、分析",
           "paragraphs": [
-            "第一层是 URL 本身可解析的结构，例如协议、主机、端口、路径、查询参数和片段。第二层需要真正访问网页，才能读取标题、正文、作者、发布时间、结构化数据、重定向和响应状态。第三层是对内容进行摘要、分类、观点提取或可信度判断，属于规则或模型分析，不是链接原生携带的信息。",
-            "这一区分决定产品应如何标注结果：直接解析项可以称为链接字段；网页抓取项应记录抓取时间与来源；推断项应明确为分析结果。"
+            "![链接信息分三层：URL 字符串可直接解析；访问网页后得到响应与内容；模型或规则在可读取资料上产生分析](./assets/knowledge-figures/url-layers.svg)",
+            "| 层次 | 能获得什么 | 前提与限制 |\n| --- | --- | --- |\n| URL 字符串 | 协议、主机、端口、路径、查询和片段 | 可直接解析；字段含义由网站决定 |\n| 请求和网页 | 状态码、重定向、标题、元数据、正文与图片地址 | 需要访问；登录、脚本、网络或权限可能限制读取 |\n| 内容分析 | 摘要、主题、观点、可信度判断 | 基于实际读到的材料；应区分事实与推断 |",
+            "链接中出现文章标题或日期样式的路径，不证明其就是准确标题或发布日期。"
           ]
         },
         {
-          "title": "URL 可以直接解析什么",
+          "title": "URL 由哪些部分组成",
           "paragraphs": [
-            "常见组成包括 scheme（协议）、username/password（现代产品不应展示或保存其中的敏感信息）、hostname、port、pathname、query/search 和 fragment/hash。host 通常是 hostname 加可选端口。",
-            "hostname 可以包含子域名和注册域名，但“品牌名”不是可靠的 URL 结构字段。例如域名中的名称可作为初步来源标识，真实公司、品牌或发布机构仍需通过页面和外部资料核实。",
-            "路径和查询参数常能提示内容主题、语言、分页、追踪来源或资源标识，但其含义由网站自行定义；片段通常指向页面内部位置，也可能被前端应用用于状态，不会自动随 HTTP 请求发送给服务器。"
+            "示例：https://example.com:443/articles/audio?lang=zh&ref=home#section-2。它是虚构地址，只用于说明结构。",
+            "| 部分 | 示例 | 可确定的信息与边界 |\n| --- | --- | --- |\n| scheme | https | 访问使用的方案；URL 也可能采用其他 scheme |\n| hostname | example.com | 目标主机名；不能单凭名称确认真实机构 |\n| port | 443 | 端口；默认端口常被省略或规范化 |\n| path | /articles/audio | 资源路径；具体含义由网站定义 |\n| query | lang=zh&ref=home | 附加参数；键值含义、是否追踪由服务决定 |\n| fragment | section-2 | 客户端片段标识，可指向页面或应用状态；通常不随 HTTP 请求发送 |",
+            "URL 还可能包含用户名信息、百分号编码、非 ASCII 域名或重复参数；敏感参数不应原样写入日志或公开链接。"
           ]
         },
         {
-          "title": "访问网页后还可以取得什么",
+          "title": "访问后可以读取什么",
           "paragraphs": [
-            "HTML 可提供 title、meta description、canonical URL、语言、作者、发布日期和正文。Open Graph 常提供用于分享预览的标题、类型、图片和规范 URL；Schema.org 的结构化数据可描述 Article 的 headline、author、datePublished、articleBody 等字段。",
-            "还可记录最终 URL、重定向链、HTTP 状态、内容类型和抓取时间。页面显示文本、HTML 元数据和结构化数据可能互相冲突，不能默认任一字段始终正确。"
+            "| 来源 | 常见字段 | 注意事项 |\n| --- | --- | --- |\n| HTTP 响应 | 状态码、内容类型、重定向与最终地址 | 状态和结果可能因权限、地区及时间变化 |\n| HTML 与可见页面 | 标题、正文、作者、日期、图片 | 页面可能动态加载；原始 HTML 与呈现结果可能不同 |\n| 页面元数据 | title、description、canonical、Open Graph 标题与分享图 | 是页面声明，可能缺失、过时或与正文不同 |\n| 结构化数据 | Article 的 headline、author、datePublished、dateModified | 格式可机读，但不保证与页面一致或真实 |",
+            "canonical 是页面给出的首选地址线索，不应盲目认定为最终真实来源。对同名字段保留取值、来源位置和获取时间，冲突时展示差异而非静默拼接。"
           ]
         },
         {
-          "title": "可靠的抽取顺序",
+          "title": "怎样设计信息提取流程",
           "paragraphs": [
-            "先规范化 URL 并解析结构，再访问页面并记录响应；随后按页面可见内容、canonical、结构化数据和元数据提取候选值，最后做冲突判断与内容分析。",
-            "标题、作者和日期应保留来源位置。若发布日期只有搜索结果摘要、URL 路径或模型猜测支持，应标为推断而不是事实；动态渲染、登录墙、反爬限制和脚本加载都可能导致字段缺失。"
-          ]
-        },
-        {
-          "title": "示例与使用边界",
-          "paragraphs": [
-            "以 Claude 官方文章链接为例，URL 路径可以提示文章主题；只有访问页面后，才能确认页面标题、栏目、发布日期、阅读时长和正文。对正文概括出的团队用法，则属于内容分析结果。",
-            "解析系统不应承诺仅凭任意链接获得全部信息。遇到权限限制、网页下线、内容变更或元数据缺失时，应返回可验证的实际字段，并把缺失、冲突和推断分别标明。"
-          ]
-        },
-        {
-          "title": "同一条链接有哪些获取边界",
-          "paragraphs": [
-            "| 层次 | 例子 | 访问要求／边界 |\n| --- | --- | --- |\n| URL 本身 | 协议、主机、路径、参数、片段 | 可直接解析；参数含义需结合服务规则 |\n| 页面元数据 | 标题、描述、分享图、发布时间 | 需请求页面；可能缺失、过时或由脚本生成 |\n| 页面正文 | 文章、表格、图片链接 | 受登录、反爬、渲染、版权及来源限制 |\n| 视频内容 | 标题、简介、字幕 | 不等于视频完整内容；字幕可能缺失或不准 |\n| AI 推断 | 主题、分类、摘要、观点 | 不是链接自带信息，须基于可读材料并保留不确定性 |\n\n不能把看不到正文的页面，仅凭 URL 或标题概括成完整文章。"
+            "先解析地址并检查安全及权限；请求资源、记录最终 URL 和响应；按可见正文、元数据、结构化数据分别提取候选；核对冲突并标注缺失；最后才对可读取内容做摘要。",
+            "例：用户提供官方文章 URL 时，可以立即解析主机和路径；只有读取页面后才能确认页面显示的标题和日期。无法访问正文时，不应将 URL 标题扩写成完整文章摘要。",
+            "实际系统还需处理相对链接、重复参数、字符编码、跳转循环、网页变更和用户权限。默认不要保留 URL 内可能存在的令牌、邮箱或个人标识。"
           ]
         }
       ],
       "pending": "不同网站的 HTML、结构化数据和访问限制差异很大；字段优先级和冲突处理需按实际抓取结果验证。",
-      "source": "来源：2026-11-11 至 2026-11-12 用户关于网页链接信息的讨论与历史检索摘要；非逐字原文，覆盖不完整。补充资料见 references。",
+      "source": "依据 WHATWG URL Standard、MDN、Open Graph 及 Google 文章结构化数据文档整编；配图为原创概念示意。",
       "references": [
         "https://url.spec.whatwg.org/",
-        "https://developer.mozilla.org/en-US/docs/Web/API/URL",
+        "https://developer.mozilla.org/en-US/docs/Web/URI/Reference",
+        "https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Fragment",
         "https://ogp.me/",
-        "https://schema.org/Article",
-        "https://claude.com/resources/articles/how-anthropic-teams-use-claude-code",
-        "https://developer.mozilla.org/en-US/docs/Web/URI/Reference"
+        "https://developers.google.com/search/docs/appearance/structured-data/article"
       ],
       "aliases": "URL,链接解析,网页元数据,Open Graph,Schema.org",
       "createdAt": "2026-11-12T06:07:35.761Z",
-      "updatedAt": "2026-11-13T04:18:39.913396+00:00"
+      "updatedAt": "2026-11-13T06:05:10.817283+00:00"
     },
     {
       "id": "method-good-product-value-experience-sustainability",
