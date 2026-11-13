@@ -120,6 +120,7 @@ def main():
     if not args.publish:
         print("预览模式：没有修改 GitHub 或网站。")
         return
+    sys.exit("暂不支持直接发布原始笔记：请先按 KNOWLEDGE_RULES.md 和 KNOWLEDGE_REDESIGN.md 完成研究、整编、去重和公开审查，再通过知识库正常构建流程发布。候选清单保留在本机。")
     approved = cfg.get("approved_hashes", {})
     if not isinstance(approved, dict):
         sys.exit("approved_hashes 必须为路径到 SHA256 的映射")
