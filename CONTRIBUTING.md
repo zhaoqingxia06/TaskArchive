@@ -1,6 +1,6 @@
 # 写入 TaskArchive
 
-每次更新前读取 AGENTS.md、ARCHIVE_RULES.md 和本文最新版本。
+每次更新前读取 AGENTS.md、ARCHIVE_RULES.md 和本文最新版本。新增、导入、同步、编辑或合并任何知识库内容时，还须读取并遵循最新的 KNOWLEDGE_RULES.md。
 
 ## 当前网站结构
 

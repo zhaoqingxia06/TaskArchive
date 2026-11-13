@@ -12,4 +12,4 @@
 - Run `python3 scripts/build.py` and the repository tests before pushing. Commit generated root `index.html` only if it changes. Never hand-edit generated output or replace the unified entry with a platform-only page.
 - Never commit credentials, authentication exports or local databases.
 
-- When organizing knowledge (including image or document interpretation), read `KNOWLEDGE_RULES.md` and respect its image and privacy requirements.
+- Before adding, importing, synchronizing, editing, or merging any TaskArchive knowledge-base content, read the latest default-branch `KNOWLEDGE_RULES.md` and apply it to all content and assets.
