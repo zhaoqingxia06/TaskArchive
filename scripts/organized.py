@@ -78,8 +78,10 @@ def build_organized(root, tasks, legacy_html, previous_data=None):
         # legacy HTML as the default page or include excluded text in v2 JSON.
         dist=root/'dist';dist.mkdir(exist_ok=True)
         (root/'index.html').write_text(page)
-        (dist/'index.html').write_text(page)
-        (dist/'knowledge.html').write_text((root/'assets/knowledge.html').read_text(encoding='utf-8'), encoding='utf-8')
+        (dist/'task-archive.html').write_text(page, encoding='utf-8')
+        knowledge_page = (root/'assets/knowledge.html').read_text(encoding='utf-8')
+        (dist/'index.html').write_text(knowledge_page, encoding='utf-8')
+        (dist/'knowledge.html').write_text(knowledge_page, encoding='utf-8')
         if (root/'assets/knowledge-figures').is_dir():
             shutil.copytree(root/'assets/knowledge-figures', dist/'assets/knowledge-figures', dirs_exist_ok=True)
         a.write(dist/'knowledge.json', a.read(root/'data/knowledge.json'))

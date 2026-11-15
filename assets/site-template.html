@@ -31,7 +31,10 @@
 @media(max-width:700px){.site-nav{height:auto;min-height:64px;padding:12px 18px;gap:12px 20px;flex-wrap:wrap}.site-name{font-size:14px}.site-tabs{height:40px;margin-left:auto;gap:20px}.site-search{width:100%;flex:1 0 100%;margin:0}}
 
 .tabbar{position:static}
-</style></head><body><nav class="site-nav" aria-label="主要页面"><a class="site-name" href="./index.html"><span class="site-mark" aria-hidden="true">知</span><span>个人空间</span></a><div class="site-tabs"><a href="./index.html" aria-current="page">任务档案</a><a href="./knowledge.html">知识库</a></div><label class="site-search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索项目、需求与原文" aria-label="搜索项目、需求与原文"></label></nav><div class="page">
+
+.site-nav{gap:24px}.site-nav .archive-link{white-space:nowrap;font-size:13px;padding:8px 10px;border-radius:8px}.site-nav .archive-link:hover,.site-nav .archive-link[aria-current]{background:#f0f1f3;color:#263859}.site-nav .archive-link:focus-visible{outline:2px solid #344e7c;outline-offset:2px}
+@media(max-width:700px){.site-nav{gap:12px}.site-nav .archive-link{margin-left:auto}.site-nav .site-search{order:3;width:100%;flex:1 0 100%;margin:0}}
+</style></head><body><nav class="site-nav" aria-label="主要页面"><a class="site-name" href="./index.html"><span class="site-mark" aria-hidden="true">知</span><span>知识库</span></a><label class="site-search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索项目、需求与原文" aria-label="搜索项目、需求与原文"></label><a class="archive-link" href="./task-archive.html" aria-current="page">任务档案</a></nav><div class="page">
 <header class="masthead"><div><h1>{{TITLE}}</h1><p class="stats">{{STATS}}</p></div><div class="header-tools"><div class="edition">最近同步 <time>{{UPDATED}}</time></div></div></header>
 <nav class="tabbar" role="tablist" aria-label="按分类浏览">{{TABS}}</nav>
 <div class="toolbar"><div class="source-filters" role="group" aria-label="筛选来源">{{SOURCES}}</div></div>
