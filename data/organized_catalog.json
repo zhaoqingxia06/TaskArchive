@@ -7857,6 +7857,23 @@
         "[\"chatgpt\",\"local-retrieval-summary-20261111\",\"s-apple-health\"]"
       ],
       "evidence_sha256": "4e1f4f6ba7f9892e99b7c817179b0816c2266752c48ac7e7e89cd201f3fbb2bc"
+    },
+    {
+      "id": "req-zc-video-presentation-skill",
+      "project_id": "p-bc90278379c9",
+      "summary": "把视频中的产品展示方法提炼成 Skill，保持画面呈现方式的精准",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_b3143229-2e04-4db3-9c94-4675dd823a16",
+          "indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
     }
   ],
   "excluded_task_ids": [
