@@ -7874,6 +7874,38 @@
       ],
       "scheduled": false,
       "status": "unknown"
+    },
+    {
+      "id": "req-zc-vivo-flowchart",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "补充 VIVO 健康流程图中听力测试等相关分支的内容",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_02d3d74b-f2ce-452d-8c76-97f62185838f",
+          "indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
+    },
+    {
+      "id": "req-zc-aurami-reviews",
+      "project_id": "p-6128bb64fe25",
+      "summary": "抓取并分析 Kickstarter Aurami 美甲机的用户评论",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_5a374134-921c-4b25-ac1c-1b43975e9b5e",
+          "indices": [
+            0
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
     }
   ],
   "excluded_task_ids": [
