@@ -7906,6 +7906,22 @@
       ],
       "scheduled": false,
       "status": "unknown"
+    },
+    {
+      "id": "req-zc-custom-sound",
+      "project_id": "p-9259327c42a7",
+      "summary": "更新声音识别模型切换对自定义声音的影响，并设计取消时数据包删除的交互分叉",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_dc420735-4042-4804-9dd8-abc2f234c276",
+          "indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
     }
   ],
   "excluded_task_ids": [
