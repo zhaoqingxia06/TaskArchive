@@ -7922,6 +7922,28 @@
       ],
       "scheduled": false,
       "status": "unknown"
+    },
+    {
+      "id": "req-zc-skill-teardown",
+      "project_id": "p-bc90278379c9",
+      "summary": "拆解现有 Skill（含 impeccable）的实现方式，并输出对应的 skill.md 文档",
+      "legacy_selectors": [
+        {
+          "task_id": "zcode:sess_0b8fd258-76b4-44e6-8d76-93fd7e11569f",
+          "indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "task_id": "zcode:sess_708b4fbc-db8a-4f02-bdb6-f89d6e24882d",
+          "indices": [
+            0
+          ]
+        }
+      ],
+      "scheduled": false,
+      "status": "unknown"
     }
   ],
   "excluded_task_ids": [
