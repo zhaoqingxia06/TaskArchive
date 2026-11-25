@@ -6651,16 +6651,18 @@
     {
       "id": "disk-usage-analysis",
       "project_id": "p-pc-cleanup",
-      "summary": "分析电脑磁盘占用（区分系统文件、应用数据与个人文件）并分批执行清理：OEM 安装包缓存、崩溃转储、npm/Chrome 缓存、应用更新包、临时文件与回收站等；2026-11 又一轮：先分析不删，随后执行第一档安全清理（约 10.5GB）与第二档清理",
+      "summary": "分析电脑磁盘占用（区分系统文件、应用数据与个人文件）并分批执行清理：OEM 安装包缓存、崩溃转储、npm/Chrome 缓存、应用更新包、临时文件与回收站等；2026-11 又一轮：先分析不删，随后执行第一档安全清理（约 10.5GB）与第二档清理，继续排查 C 盘可清理项并删除剪映相关内容与 VS Code 的 ChatGPT 扩展",
       "message_refs": [
         "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_muklhcl7_6ac4c3b5-5a9b-4377-a0a9-293604478891\"]",
         "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_mukmgk7t_b7aa67f8-4546-44d4-861b-68d3ed9eaaa2\"]",
         "[\"zcode\",\"sess_2853b6b5-9254-4585-85a1-87e9cb45790d\",\"msg_muko0elh_7293fc73-0a68-4f36-adda-c008ef9d5167\"]",
         "[\"zcode\",\"session_a38ca2b80380e6981b317697418f8e5e\",\"msg_mwap6p4l_c0d5e280-2873-46b3-8a9c-23486fe6f14f\"]",
         "[\"zcode\",\"session_a38ca2b80380e6981b317697418f8e5e\",\"msg_mwaqqozo_95850314-fc4f-4ee8-9db3-53c479d5b5e6\"]",
-        "[\"zcode\",\"session_a38ca2b80380e6981b317697418f8e5e\",\"msg_mwbhuiwi_dd713344-9fe4-4a47-80fe-95940c4a83d0\"]"
+        "[\"zcode\",\"session_a38ca2b80380e6981b317697418f8e5e\",\"msg_mwbhuiwi_dd713344-9fe4-4a47-80fe-95940c4a83d0\"]",
+        "[\"zcode\",\"session_a38ca2b80380e6981b317697418f8e5e\",\"msg_mwblj9h1_f870a47e-95ff-4f99-8c2f-a863af22f7ab\"]",
+        "[\"zcode\",\"session_a38ca2b80380e6981b317697418f8e5e\",\"msg_mwc0nfsq_34defc03-92c4-498a-8727-fa6f2abc82e6\"]"
       ],
-      "evidence_sha256": "8ef762d990bfad6f112f0d0fc594ad0ee8a57412bedf1cf6909eb98a246144d6"
+      "evidence_sha256": "692d362169c4cfd1712dce3c4aa257c0eb0a6dd1ade1d79c83fac7697d63d1f4"
     },
     {
       "id": "d-drive-reorganize",
@@ -6849,7 +6851,7 @@
     {
       "id": "sign-bi-daily-monitor",
       "project_id": "p-sign-translator-v2",
-      "summary": "接入手语翻译官 BI 看板并建立每天 10:00 的数据监控，筛选关键用户数据项，整理手语翻译官与 vivo 听说的日活及使用频率数据；输出看板 38157 过去 12 个月逐月趋势、看板 38159 过去 7 天日均使用总结；全面整理看板 38158：App 与各子功能（语音转手语、手语转语音、词汇/句子学习、AI 手语陪练、手语视频生成）的日活、使用次数、时长与 3 日留存，App 与子功能同表对比、以指标为横轴跨功能对比，剔除疑似异常数据，标注 30 天均值与最高最低代表值便于直接汇报；新增用户留存与活跃用户留存明细合成趋势图，各功能每日日活与平均线标注（看板仅统计单渠道，11.08 实际 1750 人按比例折算，9.08–9.28 与 9.28–11.08 分段平均线），对比 25/26 年各月平均日活、人均时长与人均次数（含 12 个月均值中位数），计算 10.15–11.08 各功能人均使用次数并可视化，继续挖掘看板中有价值的数据并配结论与图表",
+      "summary": "接入手语翻译官 BI 看板并建立每天 10:00 的数据监控，筛选关键用户数据项，整理手语翻译官与 vivo 听说的日活及使用频率数据；输出看板 38157 过去 12 个月逐月趋势、看板 38159 过去 7 天日均使用总结（38157 已升级为新看板，数据以它为准）；全面整理看板 38158：App 与各子功能（语音转手语、手语转语音、词汇/句子学习、AI 手语陪练、手语视频生成）的日活、使用次数、时长与 3 日留存，App 与子功能同表对比、以指标为横轴跨功能对比，剔除疑似异常数据，标注 30 天均值与最高最低代表值；新增用户留存与活跃用户留存明细合成趋势图，各功能每日日活与平均线标注（看板仅统计单渠道，11.08 实际 1750 人按比例折算，9.08–9.28 与 9.28–11.08 分段平均线），对比 25/26 年各月平均日活、人均时长与人均次数（含 12 个月均值中位数），计算 10.15–11.08 各功能人均使用次数并可视化，继续挖掘看板中有价值的数据并配结论与图表",
       "message_refs": [
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mveksb19_440a4740-cdcf-4594-9be3-ebf3e0006f30\"]",
         "[\"zcode\",\"sess_5abffbe8-89e5-4384-ad48-531af5741f19\",\"msg_mvekyo4w_445e4744-c467-40a5-9b3b-88bde8b104b8\"]",
@@ -6881,9 +6883,10 @@
         "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mwa2s73d_b4aaf910-9fd4-4c30-8acf-695e3ba45e47\"]",
         "[\"zcode\",\"session_042fe5e3c9c9b21c451446838d872a8b\",\"msg_mwa2w79y_1b0ad9f1-ecb5-4444-a02a-91b5919195e6\"]",
         "[\"zcode\",\"session_aaf4f133d78cc8288e437bbc4bad878d\",\"msg_mwa2qbaa_df29afad-7702-4e7e-b1f1-7f8f720833ac\"]",
-        "[\"zcode\",\"session_f581b6272363faa2106d45d13cd46749\",\"msg_mwa2xwop_6b36603f-d23d-4b92-a8a6-9a2b2b819e9d\"]"
+        "[\"zcode\",\"session_f581b6272363faa2106d45d13cd46749\",\"msg_mwa2xwop_6b36603f-d23d-4b92-a8a6-9a2b2b819e9d\"]",
+        "[\"zcode\",\"sess_3ba382c3-e401-416b-8830-d1464cae18b7\",\"msg_mwvksxh6_63af2b7f-e247-45c4-859e-2810d8b72435\"]"
       ],
-      "evidence_sha256": "1d80a0dbf9660adec1a62774e9a828a045ed075a962d559d565d1f0561423a43",
+      "evidence_sha256": "9c381747dbec0a99bc3539fd7ea72e91640e3ffa52a0faec55d66c774c735434",
       "scheduled": true
     },
     {
@@ -7944,6 +7947,48 @@
       ],
       "scheduled": false,
       "status": "unknown"
+    },
+    {
+      "id": "bilibili-fitness-videos-digest",
+      "project_id": "p-fitness-plan",
+      "summary": "把 B 站健身减脂博主视频里的信息整理成文字、梳理成完整文档（要求拿到视频内容而非仅搜索结果，任务完成前不停，最终按“这些内容够了”收束）",
+      "message_refs": [
+        "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwc9h06a_5e8c98f0-59a8-4a89-8e1b-1403028cc6bf\"]",
+        "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwcaaqra_f2834ce7-5132-4513-a6d6-dada91836126\"]",
+        "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwcad77d_ec9f4c36-782e-4d34-9ec4-f6ac0441f614\"]",
+        "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwcv78pj_38de530c-2e95-4b49-a72c-26ed557283b2\"]"
+      ],
+      "evidence_sha256": "f863b36e030bb7401c63c71c32caf616754db007b10e1235dadc0e9c99c07b68"
+    },
+    {
+      "id": "sign-feature-expansion-matrix",
+      "project_id": "p-sign-translator-v2",
+      "summary": "补充手语翻译官各功能的拓展方向矩阵表：填上空白格子并完善各功能的用户规模初步预估与计算依据，输出可直接复制的表格格式",
+      "message_refs": [
+        "[\"zcode\",\"session_0fafbb9381b0b007fa337c1eaac580c8\",\"msg_mwnd8qjf_252fabb4-a7dc-4528-920a-3e883bc4c82d\"]",
+        "[\"zcode\",\"session_0fafbb9381b0b007fa337c1eaac580c8\",\"msg_mwnd993o_3d495151-8b4a-4474-926a-7a46038d2c18\"]"
+      ],
+      "evidence_sha256": "2105be21066a790227bedaf579eee34e7a40b8aa90420ce019e28f84cb26d98d"
+    },
+    {
+      "id": "quarterly-accessibility-data-tracking",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "按既有维度与格式为无障碍产品线数据追踪表增加 Q4 列并建立长期季度追踪（每季度 1/4/7/10 月 4 日 10:00 更新），原始数据取自 BI 看板 bi.vmic.xyz/dashboard/38157",
+      "message_refs": [
+        "[\"zcode\",\"session_4112b3e658e97cf330c8eb4ecc53a843\",\"msg_mwvjq6fl_7a2513ec-f17b-4d10-b501-eb9f5fbbfe57\"]",
+        "[\"zcode\",\"session_4112b3e658e97cf330c8eb4ecc53a843\",\"msg_mwvjt8iy_e513b59c-b294-48fb-b513-a6afe725e6b9\"]"
+      ],
+      "evidence_sha256": "80da0229843f7ae03b3ef254282b37979997dcc3ae8724708236c074bf3392d4",
+      "scheduled": true
+    },
+    {
+      "id": "text-input-scenario-analysis",
+      "project_id": "p-sign-translator-v2",
+      "summary": "分析手语翻译官用户输入的文本（App 会翻译成手语）包含哪些使用场景，进而推测用户的用途与价值",
+      "message_refs": [
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvkuh2q_835d772f-40d4-454e-a519-bccf6b98d929\"]"
+      ],
+      "evidence_sha256": "824acc853d4477837231e07062a32362543dfc379b745f75e2204b4435f6722e"
     }
   ],
   "excluded_task_ids": [

@@ -2502,6 +2502,13 @@
      "text": "https://bi.vmic.xyz/dashboard/38157    这3个数据表，每个表过去12个月的 每个月（10月计算1号到今天的就可以了）的数据及是否有什么趋势 用文字描述",
      "sent_at": "2026-10-23T16:46:43+08:00",
      "attachments": []
+    },
+    {
+     "id": "msg_mwvksxh6_63af2b7f-e247-45c4-859e-2810d8b72435",
+     "role": "user",
+     "text": "https://bi.vmic.xyz/dashboard/38157 这是新看板 用这个数据",
+     "sent_at": "2026-11-25T11:40:38+08:00",
+     "attachments": []
     }
    ]
   },
@@ -3282,6 +3289,20 @@
      "text": "第二档也全部清除",
      "sent_at": "2026-11-11T10:22:30+08:00",
      "attachments": []
+    },
+    {
+     "id": "msg_mwblj9h1_f870a47e-95ff-4f99-8c2f-a863af22f7ab",
+     "role": "user",
+     "text": "你检查下C盘还有哪些可以清理的",
+     "sent_at": "2026-11-11T12:05:43+08:00",
+     "attachments": []
+    },
+    {
+     "id": "msg_mwc0nfsq_34defc03-92c4-498a-8727-fa6f2abc82e6",
+     "role": "user",
+     "text": "剪映 相关内容全部删除； VS Code 的 ChatGPT 扩展删除；",
+     "sent_at": "2026-11-11T19:08:52+08:00",
+     "attachments": []
     }
    ]
   },
@@ -3332,6 +3353,91 @@
      "text": "一共需要这么多126745.2， Q1 到Q4 是逐步缓慢增长的，给我Q1 到Q4分别的数据",
      "sent_at": "2026-11-10T21:47:42+08:00",
      "attachments": []
+    }
+   ]
+  },
+  {
+   "id": "session_f39ef67809d9bc1756732edf0e96bca8",
+   "messages": [
+    {
+     "id": "msg_mwc9h06a_5e8c98f0-59a8-4a89-8e1b-1403028cc6bf",
+     "role": "user",
+     "text": "https://search.bilibili.com/all?vt=10076573&keyword=%E9%A9%AC%E9%A9%AC%E6%9C%89%E7%82%B9%E9%A5%BF&from_source=web_search&spm_id_from=333.1007&search_source=5你可以用 Computer cos use 或者是其他的工具，把这个博主所有的视频整理成一份体系化的、结构化的文档吗？我想知道他过去都讲了哪些健身、减脂啊，这方面锻炼相关的知识。",
+     "sent_at": "2026-11-11T23:15:48+08:00",
+     "attachments": []
+    },
+    {
+     "id": "msg_mwcaaqra_f2834ce7-5132-4513-a6d6-dada91836126",
+     "role": "user",
+     "text": "我是希望你能够拿到他视频里面的信息，把里面的信息整理成文字，梳理成一个完整的文档。",
+     "sent_at": "2026-11-11T23:38:56+08:00",
+     "attachments": []
+    },
+    {
+     "id": "msg_mwcad77d_ec9f4c36-782e-4d34-9ec4-f6ac0441f614",
+     "role": "user",
+     "text": "不完成任务前不要停",
+     "sent_at": "2026-11-11T23:40:51+08:00",
+     "attachments": []
+    },
+    {
+     "id": "msg_mwcv78pj_38de530c-2e95-4b49-a72c-26ed557283b2",
+     "role": "user",
+     "text": "停止 这些内容够了",
+     "sent_at": "2026-11-12T09:24:05+08:00",
+     "attachments": []
+    }
+   ]
+  },
+  {
+   "id": "session_0fafbb9381b0b007fa337c1eaac580c8",
+   "messages": [
+    {
+     "id": "msg_mwnd8qjf_252fabb4-a7dc-4528-920a-3e883bc4c82d",
+     "role": "user",
+     "text": "这是我制定的一个针对手语翻译官，它的每个功能，它的一个就是拓展的方向吧。然后现在呢，需要你帮我补充一下，每个我空的一些格子。然后包括用户规模的话，我现在只是初步的预估，写了一下计算方方式，需要你调研一下，给我一些数据。然后覆盖进度和新增用户这个你不知道，你可以先不用，嗯，啊，你可以先不用填。",
+     "sent_at": "2026-11-19T17:46:50+08:00",
+     "attachments": []
+    },
+    {
+     "id": "msg_mwnd993o_3d495151-8b4a-4474-926a-7a46038d2c18",
+     "role": "user",
+     "text": "轶可复制的表格形式给我 这样我可以复制到我的表格里面",
+     "sent_at": "2026-11-19T17:47:13+08:00",
+     "attachments": []
+    }
+   ]
+  },
+  {
+   "id": "session_4112b3e658e97cf330c8eb4ecc53a843",
+   "messages": [
+    {
+     "id": "msg_mwvjq6fl_7a2513ec-f17b-4d10-b501-eb9f5fbbfe57",
+     "role": "user",
+     "text": "请按照这些维度和格式 增加一列Q4的数据，并建立长期的数据追踪",
+     "sent_at": "2026-11-25T11:10:31+08:00",
+     "attachments": []
+    },
+    {
+     "id": "msg_mwvjt8iy_e513b59c-b294-48fb-b513-a6afe725e6b9",
+     "role": "user",
+     "text": "原始数据从https://bi.vmic.xyz/dashboard/38157  获取",
+     "sent_at": "2026-11-25T11:12:53+08:00",
+     "attachments": []
+    }
+   ]
+  },
+  {
+   "id": "session_3ac8c1428500d38362c5d07f1a9653cc",
+   "messages": [
+    {
+     "id": "msg_mwvkuh2q_835d772f-40d4-454e-a519-bccf6b98d929",
+     "role": "user",
+     "text": "这是手语翻译官 用户输入的文本，手语翻译管app会翻译成手语，我需要你帮我分析下 这些文本包含哪些场景，进而推测用户用来干啥 价值",
+     "sent_at": "2026-11-25T11:41:51+08:00",
+     "attachments": [
+      "pasted-text-20261125-113933-009a2c20.txt"
+     ]
     }
    ]
   }
