@@ -7984,11 +7984,31 @@
     {
       "id": "text-input-scenario-analysis",
       "project_id": "p-sign-translator-v2",
-      "summary": "分析手语翻译官用户输入的文本（App 会翻译成手语）包含哪些使用场景，进而推测用户的用途与价值",
+      "summary": "分析手语翻译官用户输入的文本（App 会翻译成手语）包含哪些使用场景，进而推测用户的用途与价值；以 3 个月数据合并分析（删除单字噪声），确认口径——一个会话 id 是一个会话、一个用户可有多个 id，会话级汇总表按发送规模分 sheet（100~500、500+ 等），同一 id 下重复句子合并，不明确分类的归入最接近的类不留未分类，并把每个 id 清洗去重后的句子数填入内容示例列",
       "message_refs": [
-        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvkuh2q_835d772f-40d4-454e-a519-bccf6b98d929\"]"
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvkuh2q_835d772f-40d4-454e-a519-bccf6b98d929\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvlpy2w_895e007d-8409-4f0f-a5fd-79c99a1bee2a\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvlre4r_1bbb65e6-a616-4939-93dc-e85c21810ceb\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvv2l41_c568f781-53e3-4c77-98e0-e7e06e4cb007\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvv4ka1_e986bf77-3dbd-4865-86c5-82d2e363677c\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvxc96o_d1556adc-c444-405d-8401-dc04dbcb7266\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvxdirj_c212aa3e-9d7c-41e8-87bd-03bc662188be\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvzvkqj_77f45979-ec45-4503-87bf-36360b8fb150\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mww01f8w_9f928e61-9372-4a0f-b810-3728487666a4\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mww05klc_5ce43658-a7ad-46f2-b541-d4ab4edb60fc\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mww0m0bs_9abe772d-708c-4f9b-bc23-b744587f970f\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mww0nu6n_ad030d76-7848-48c9-a773-2e39efa61df4\"]"
       ],
-      "evidence_sha256": "824acc853d4477837231e07062a32362543dfc379b745f75e2204b4435f6722e"
+      "evidence_sha256": "979b9a0b5c923e984e3ed331fb5b8e92a0bbd74aa12d9337ae8a8d09d6f3640f"
+    },
+    {
+      "id": "hear-sound-next-selling-points",
+      "project_id": "p-2b7ccd7e7408",
+      "summary": "为 vivo 听说的声音识别规划下一阶段卖点：先头脑风暴、无限发挥想象并充分调研，产出 3~5 个卖点需求，每个写清用户痛点、价值与初步可行性方案",
+      "message_refs": [
+        "[\"zcode\",\"session_790b923873154d322309d66bb452b65e\",\"msg_mwwvxbgf_35fcdc4e-3a81-4001-8035-ee883b976f7a\"]"
+      ],
+      "evidence_sha256": "a17963d8432842919b4bd893e3af3ae6d8eece5b15172c852882ae59af280eb6"
     }
   ],
   "excluded_task_ids": [
