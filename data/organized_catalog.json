@@ -7951,14 +7951,15 @@
     {
       "id": "bilibili-fitness-videos-digest",
       "project_id": "p-fitness-plan",
-      "summary": "把 B 站健身减脂博主视频里的信息整理成文字、梳理成完整文档（要求拿到视频内容而非仅搜索结果，任务完成前不停，最终按“这些内容够了”收束）",
+      "summary": "把 B 站健身减脂博主视频里的信息整理成文字、梳理成完整文档（要求拿到视频内容而非仅搜索结果，任务完成前不停，最终按“这些内容够了”收束），并把已整理的 md 文档输出交付",
       "message_refs": [
         "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwc9h06a_5e8c98f0-59a8-4a89-8e1b-1403028cc6bf\"]",
         "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwcaaqra_f2834ce7-5132-4513-a6d6-dada91836126\"]",
         "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwcad77d_ec9f4c36-782e-4d34-9ec4-f6ac0441f614\"]",
-        "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwcv78pj_38de530c-2e95-4b49-a72c-26ed557283b2\"]"
+        "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwcv78pj_38de530c-2e95-4b49-a72c-26ed557283b2\"]",
+        "[\"zcode\",\"session_f39ef67809d9bc1756732edf0e96bca8\",\"msg_mwxoqpmw_9dbb28e5-e0d7-43b3-9ad3-4c89aaf5f673\"]"
       ],
-      "evidence_sha256": "f863b36e030bb7401c63c71c32caf616754db007b10e1235dadc0e9c99c07b68"
+      "evidence_sha256": "47c4803281de0f5c2d8f7f04f85f86c51ba83e959d54282f5fc748619bef9ed8"
     },
     {
       "id": "sign-feature-expansion-matrix",
@@ -7984,7 +7985,7 @@
     {
       "id": "text-input-scenario-analysis",
       "project_id": "p-sign-translator-v2",
-      "summary": "分析手语翻译官用户输入的文本（App 会翻译成手语）包含哪些使用场景，进而推测用户的用途与价值；以 3 个月数据合并分析（删除单字噪声），确认口径——一个会话 id 是一个会话、一个用户可有多个 id，会话级汇总表按发送规模分 sheet（100~500、500+ 等），同一 id 下重复句子合并，不明确分类的归入最接近的类不留未分类，并把每个 id 清洗去重后的句子数填入内容示例列",
+      "summary": "分析手语翻译官用户输入的文本（App 会翻译成手语）包含哪些使用场景，进而推测用户的用途与价值；以 3 个月数据合并分析（删除单字噪声），确认口径——一个会话 id 是一个会话、一个用户可有多个 id，会话级汇总表按发送规模分 sheet（1 句、2~3 句、…、100~500、500+ 等），同一 id 下重复句子合并，不明确分类的归入最接近的类，每个 id 清洗去重后的句子数填入内容示例列；最终输出 CSV 版本，并排查 xls 转 csv 时多个 sheet 被自动合并的问题",
       "message_refs": [
         "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvkuh2q_835d772f-40d4-454e-a519-bccf6b98d929\"]",
         "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwvlpy2w_895e007d-8409-4f0f-a5fd-79c99a1bee2a\"]",
@@ -7997,18 +7998,45 @@
         "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mww01f8w_9f928e61-9372-4a0f-b810-3728487666a4\"]",
         "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mww05klc_5ce43658-a7ad-46f2-b541-d4ab4edb60fc\"]",
         "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mww0m0bs_9abe772d-708c-4f9b-bc23-b744587f970f\"]",
-        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mww0nu6n_ad030d76-7848-48c9-a773-2e39efa61df4\"]"
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mww0nu6n_ad030d76-7848-48c9-a773-2e39efa61df4\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwyfsrwq_42034d4d-996f-4292-9ca7-04cf9d8a97a7\"]",
+        "[\"zcode\",\"session_3ac8c1428500d38362c5d07f1a9653cc\",\"msg_mwyg5w4c_c61f8fa8-828a-48e3-bcf4-6bd3a3fabace\"]"
       ],
-      "evidence_sha256": "979b9a0b5c923e984e3ed331fb5b8e92a0bbd74aa12d9337ae8a8d09d6f3640f"
+      "evidence_sha256": "304289f1241860ef7d5b5452345537d7b550f38885f1bd976acb42f4e7892328"
     },
     {
       "id": "hear-sound-next-selling-points",
       "project_id": "p-2b7ccd7e7408",
-      "summary": "为 vivo 听说的声音识别规划下一阶段卖点：先头脑风暴、无限发挥想象并充分调研，产出 3~5 个卖点需求，每个写清用户痛点、价值与初步可行性方案",
+      "summary": "为 vivo 听说的声音识别规划下一阶段卖点：先头脑风暴、无限发挥想象并充分调研，产出 3~5 个卖点需求，每个写清用户痛点、价值与初步可行性方案；初版不满意后转挖细分场景，优化需求简述与用户价值的文案表达，并在此基础上继续头脑风暴寻找更多机会点",
       "message_refs": [
-        "[\"zcode\",\"session_790b923873154d322309d66bb452b65e\",\"msg_mwwvxbgf_35fcdc4e-3a81-4001-8035-ee883b976f7a\"]"
+        "[\"zcode\",\"session_790b923873154d322309d66bb452b65e\",\"msg_mwwvxbgf_35fcdc4e-3a81-4001-8035-ee883b976f7a\"]",
+        "[\"zcode\",\"session_790b923873154d322309d66bb452b65e\",\"msg_mwx8b5w5_05ba8877-6485-44e8-b33e-038ff1f3ac61\"]",
+        "[\"zcode\",\"session_790b923873154d322309d66bb452b65e\",\"msg_mwx8qfei_32339419-54fc-4fd6-b60f-cd6cd03be95b\"]",
+        "[\"zcode\",\"session_790b923873154d322309d66bb452b65e\",\"msg_mwx96htp_90ad3f9e-0fdd-473c-9c8a-7a9b40bd3717\"]"
       ],
-      "evidence_sha256": "a17963d8432842919b4bd893e3af3ae6d8eece5b15172c852882ae59af280eb6"
+      "evidence_sha256": "03172bc4dcab348edd8e43ba4f012726a7cc1dc22334356ebd2c71aaecd71bce"
+    },
+    {
+      "id": "skillhub-lifecycle",
+      "project_id": "p-bc90278379c9",
+      "summary": "安装并初始化 SkillHub（自己的 GitHub 仓库）并按 SKILL.md 完成自检：升级到 v0.4.0 本机测试版、确认完整安装路径；随后安装 handoff skill，按测试结论把已安装的这些 skill 全部删除；盘点 ZCode、DeepSeek harness、Codex 三个工具的 skill 列表，核对自行整理的测试记录是否正确，并把各平台内置与项目级 skill 的加载路径关系整理成 4:3 比例的清晰关系图",
+      "message_refs": [
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwx89eyt_348611a5-4a6c-4adb-8216-d5dcb6cf0d7a\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxdrs0a_d09143b1-cc4a-4174-9450-2f01fd60cef2\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxj3o10_8f373778-a175-4eec-aaef-90bba97ae90c\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxjjy5e_d760e63e-78bc-484f-9407-4eb9c35ef68a\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxkjso4_8bceb69f-f831-4ccb-a89e-964b127f26e3\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxlqddq_6bc459c8-fa74-41a0-b655-902c1808d34b\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxlr7wu_356b160b-7e71-4ff9-81c9-a548102169fb\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxmylrn_1334b1a6-9c8b-4282-b0e4-f81fe7db3e1d\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxnloh3_ceaf5ba1-441d-4177-963e-7ee0b438cec9\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxnpj2j_60c995c5-c595-44e1-8134-6b23f2f20126\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxoch78_805c3b12-3d38-4238-9c81-cc6149f1a5a3\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxops51_0633a7a5-dda3-4df6-b582-72e62f56fe0c\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxpcv1h_28a6067b-4c24-41f8-8dd7-dd05c50e622e\"]",
+        "[\"zcode\",\"session_f9e5f149572147aa71b606b33bf99e27\",\"msg_mwxpi1nn_c4031315-2837-4110-8cc1-25ef02bde229\"]"
+      ],
+      "evidence_sha256": "f2235555b8de307775018ab95cd112f01ea488bcef527b0c489a61cdf36dc562"
     }
   ],
   "excluded_task_ids": [
